@@ -1,0 +1,1029 @@
+﻿tahun,kode_kab,nama_kab,nama_prov,jumlah_miskin (000),persen_miskin,Indeks Kedalaman Kemiskinan (P1),Indeks Keparahan Kemiskinan (P2)
+2024,1101,Aceh Selatan,Aceh,30.53,12.02,1.57,0.31
+2024,1102,Aceh Tenggara,Aceh,27.28,11.99,1.64,0.35
+2024,1103,Aceh Timur,Aceh,60.86,13.26,2.04,0.46
+2024,1104,Aceh Tengah,Aceh,31.85,14.27,2.12,0.48
+2024,1105,Aceh Barat,Aceh,38.79,17.6,3.02,0.75
+2024,1106,Aceh Besar,Aceh,58.98,13.21,1.88,0.47
+2024,1107,Pidie,Aceh,86.89,18.59,2.14,0.42
+2024,1108,Aceh Utara,Aceh,104.49,16.11,2.78,0.7
+2024,1109,Simeulue,Aceh,17.59,17.69,2.62,0.6
+2024,1110,Aceh Singkil,Aceh,24.84,19.06,3.06,0.74
+2024,1111,Bireuen,Aceh,59.93,12.1,1.69,0.37
+2024,1112,Aceh Barat Daya,Aceh,24.44,15.32,2.31,0.46
+2024,1113,Gayo Lues,Aceh,17.93,18.3,2.76,0.63
+2024,1114,Aceh Jaya,Aceh,12.24,12.25,1.39,0.28
+2024,1115,Nagan Raya,Aceh,29.6,16.94,2.3,0.45
+2024,1116,Aceh Tamiang,Aceh,37.76,12.17,1.47,0.28
+2024,1117,Bener Meriah,Aceh,28.37,18.18,3.07,0.8
+2024,1118,Pidie Jaya,Aceh,30.95,18.28,3.14,0.73
+2024,1171,Kota Banda Aceh,Aceh,19.97,6.95,0.71,0.11
+2024,1172,Kota Sabang,Aceh,5.17,14.58,2.9,0.8
+2024,1173,Kota Lhokseumawe,Aceh,22.77,10.44,1.98,0.67
+2024,1174,Kota Langsa,Aceh,19.37,10.33,1.52,0.42
+2024,1175,Kota Subulussalam,Aceh,13.95,16.38,2.11,0.41
+2024,1201,Tapanuli Tengah,Sumatera Utara,49.21,11.8,1.33,0.21
+2024,1202,Tapanuli Utara,Sumatera Utara,25.51,8.21,1.27,0.35
+2024,1203,Tapanuli Selatan,Sumatera Utara,19.9,6.92,0.57,0.08
+2024,1204,Nias,Sumatera Utara,21.74,14.89,1.64,0.34
+2024,1205,Langkat,Sumatera Utara,96.54,9.04,1.18,0.26
+2024,1206,Karo,Sumatera Utara,33.44,7.37,0.81,0.18
+2024,1207,Deli Serdang,Sumatera Utara,84.24,3.44,0.41,0.12
+2024,1208,Simalungun,Sumatera Utara,68.05,7.72,0.75,0.12
+2024,1209,Asahan,Sumatera Utara,61.34,8.12,1.15,0.29
+2024,1210,Labuhanbatu,Sumatera Utara,42.45,7.84,0.83,0.13
+2024,1211,Dairi,Sumatera Utara,20.4,7.1,0.79,0.15
+2024,1212,Toba,Sumatera Utara,15.03,8.07,0.89,0.17
+2024,1213,Mandailing Natal,Sumatera Utara,40.56,8.69,1.11,0.21
+2024,1214,Nias Selatan,Sumatera Utara,54.48,16.32,2.62,0.6
+2024,1215,Pakpak Bharat,Sumatera Utara,3.73,6.87,0.8,0.11
+2024,1216,Humbang Hasundutan,Sumatera Utara,16.78,8.44,0.78,0.09
+2024,1217,Samosir,Sumatera Utara,14.85,11.63,0.98,0.15
+2024,1218,Serdang Bedagai,Sumatera Utara,43.0,6.97,1.11,0.28
+2024,1219,Batu Bara,Sumatera Utara,47.66,10.94,1.5,0.3
+2024,1220,Padang Lawas Utara,Sumatera Utara,27.21,8.97,1.33,0.29
+2024,1221,Padang Lawas,Sumatera Utara,24.96,7.87,1.12,0.3
+2024,1222,Labuhanbatu Selatan,Sumatera Utara,29.19,7.73,0.93,0.16
+2024,1223,Labuhanbatu Utara,Sumatera Utara,34.0,8.98,0.89,0.14
+2024,1224,Nias Utara,Sumatera Utara,30.53,21.5,4.34,1.28
+2024,1225,Nias Barat,Sumatera Utara,18.78,22.68,1.76,0.2
+2024,1271,Kota Medan,Sumatera Utara,187.04,7.94,1.09,0.26
+2024,1272,Kota Pematangsiantar,Sumatera Utara,18.97,7.2,1.26,0.27
+2024,1273,Kota Sibolga,Sumatera Utara,9.99,11.39,1.7,0.37
+2024,1274,Kota Tanjungbalai,Sumatera Utara,22.25,11.97,1.6,0.33
+2024,1275,Kota Binjai,Sumatera Utara,13.86,4.75,0.69,0.14
+2024,1276,Kota Tebing Tinggi,Sumatera Utara,15.31,8.79,1.25,0.29
+2024,1277,Kota Padangsidimpuan,Sumatera Utara,14.88,6.23,0.77,0.12
+2024,1278,Kota Gunungsitoli,Sumatera Utara,22.16,14.72,1.99,0.38
+2024,1301,Pesisir Selatan,Sumatera Barat,36.05,7.49,0.74,0.11
+2024,1302,Solok,Sumatera Barat,28.18,7.31,1.09,0.3
+2024,1303,Sijunjung,Sumatera Barat,14.99,5.78,0.71,0.13
+2024,1304,Tanah Datar,Sumatera Barat,15.0,4.28,0.44,0.07
+2024,1305,Padang Pariaman,Sumatera Barat,26.76,6.27,0.78,0.19
+2024,1306,Agam,Sumatera Barat,34.82,6.83,0.5,0.07
+2024,1307,Lima Puluh Kota,Sumatera Barat,27.72,6.92,0.77,0.16
+2024,1308,Pasaman,Sumatera Barat,20.01,6.74,0.79,0.13
+2024,1309,Kepulauan Mentawai,Sumatera Barat,14.19,13.89,1.6,0.35
+2024,1310,Dharmasraya,Sumatera Barat,15.25,5.32,0.64,0.15
+2024,1311,Solok Selatan,Sumatera Barat,12.33,6.56,0.94,0.22
+2024,1312,Pasaman Barat,Sumatera Barat,34.6,7.0,0.76,0.17
+2024,1371,Kota Padang,Sumatera Barat,41.4,4.06,0.25,0.03
+2024,1372,Kota Solok,Sumatera Barat,2.4,3.07,0.34,0.07
+2024,1373,Kota Sawahlunto,Sumatera Barat,1.52,2.33,0.3,0.08
+2024,1374,Kota Padang Panjang,Sumatera Barat,3.06,5.31,0.46,0.07
+2024,1375,Kota Bukittinggi,Sumatera Barat,5.82,4.08,0.43,0.08
+2024,1376,Kota Payakumbuh,Sumatera Barat,7.62,5.19,0.74,0.15
+2024,1377,Kota Pariaman,Sumatera Barat,4.01,4.26,0.46,0.08
+2024,1401,Kampar,Riau,63.74,6.92,0.91,0.19
+2024,1402,Indragiri Hulu,Riau,27.53,6.02,0.61,0.09
+2024,1403,Bengkalis,Riau,36.56,6.36,0.72,0.12
+2024,1404,Indragiri Hilir,Riau,41.05,5.66,0.84,0.22
+2024,1405,Pelalawan,Riau,49.2,8.49,1.12,0.21
+2024,1406,Rokan Hulu,Riau,75.89,9.62,0.96,0.18
+2024,1407,Rokan Hilir,Riau,53.49,7.01,0.85,0.19
+2024,1408,Siak,Riau,26.72,5.08,0.56,0.08
+2024,1409,Kuantan Singingi,Riau,25.56,7.89,0.91,0.2
+2024,1410,Kepulauan Meranti,Riau,44.34,23.15,3.59,0.88
+2024,1471,Kota Pekanbaru,Riau,38.17,3.15,0.34,0.06
+2024,1472,Kota Dumai,Riau,10.02,3.14,0.2,0.03
+2024,1501,Kerinci,Jambi,16.83,6.93,1.0,0.24
+2024,1502,Merangin,Jambi,33.49,8.4,1.18,0.27
+2024,1503,Sarolangun,Jambi,26.54,8.36,1.09,0.21
+2024,1504,Batanghari,Jambi,23.74,8.63,1.34,0.28
+2024,1505,Muaro Jambi,Jambi,17.48,3.65,0.48,0.1
+2024,1506,Tanjung Jabung Barat,Jambi,33.12,9.54,1.17,0.24
+2024,1507,Tanjung Jabung Timur,Jambi,21.86,10.14,2.32,0.76
+2024,1508,Bungo,Jambi,20.04,5.06,0.4,0.06
+2024,1509,Tebo,Jambi,22.48,6.12,0.73,0.12
+2024,1571,Kota Jambi,Jambi,47.25,7.73,0.96,0.23
+2024,1572,Kota Sungai Penuh,Jambi,2.6,2.92,0.33,0.07
+2024,1601,Ogan Komering Ulu,Sumatera Selatan,41.54,10.68,1.0,0.13
+2024,1602,Ogan Komering Ilir,Sumatera Selatan,106.37,12.08,1.62,0.39
+2024,1603,Muara Enim,Sumatera Selatan,66.42,9.79,2.14,0.64
+2024,1604,Lahat,Sumatera Selatan,60.19,14.14,2.13,0.53
+2024,1605,Musi Rawas,Sumatera Selatan,57.44,13.44,1.87,0.4
+2024,1606,Musi Banyuasin,Sumatera Selatan,88.94,12.88,2.02,0.43
+2024,1607,Banyuasin,Sumatera Selatan,84.36,9.31,1.66,0.44
+2024,1608,Ogan Komering Ulu Timur,Sumatera Selatan,68.74,9.75,0.72,0.09
+2024,1609,Ogan Komering Ulu Selatan,Sumatera Selatan,37.81,9.86,1.68,0.38
+2024,1610,Ogan Ilir,Sumatera Selatan,55.49,12.3,1.49,0.33
+2024,1611,Empat Lawang,Sumatera Selatan,28.42,10.78,1.51,0.32
+2024,1612,Penukal Abab Lematang Ilir,Sumatera Selatan,19.79,9.82,0.62,0.09
+2024,1613,Musi Rawas Utara,Sumatera Selatan,35.29,17.38,3.07,0.78
+2024,1671,Kota Palembang,Sumatera Selatan,173.59,9.77,1.66,0.4
+2024,1672,Kota Pagar Alam,Sumatera Selatan,11.82,8.18,1.0,0.16
+2024,1673,Kota Lubuk Linggau,Sumatera Selatan,27.65,11.14,1.43,0.28
+2024,1674,Kota Prabumulih,Sumatera Selatan,20.41,10.13,1.47,0.36
+2024,1701,Bengkulu Selatan,Bengkulu,31.8,17.1,2.91,0.77
+2024,1702,Rejang Lebong,Bengkulu,41.16,14.65,1.99,0.38
+2024,1703,Bengkulu Utara,Bengkulu,34.52,10.96,1.03,0.18
+2024,1704,Kaur,Bengkulu,21.75,17.12,2.54,0.61
+2024,1705,Seluma,Bengkulu,35.08,17.23,2.43,0.49
+2024,1706,Mukomuko,Bengkulu,20.88,10.76,1.56,0.32
+2024,1707,Lebong,Bengkulu,12.51,10.45,1.3,0.27
+2024,1708,Kepahiang,Bengkulu,18.73,12.9,2.13,0.49
+2024,1709,Bengkulu Tengah,Bengkulu,11.98,10.14,1.18,0.2
+2024,1771,Kota Bengkulu,Bengkulu,52.96,13.76,2.39,0.71
+2024,1801,Lampung Selatan,Lampung,132.38,12.57,1.94,0.46
+2024,1802,Lampung Tengah,Lampung,137.41,10.37,1.66,0.4
+2024,1803,Lampung Utara,Lampung,105.91,16.92,2.3,0.51
+2024,1804,Lampung Barat,Lampung,33.43,10.68,1.51,0.4
+2024,1805,Tulang Bawang,Lampung,37.46,7.88,0.82,0.17
+2024,1806,Tanggamus,Lampung,64.22,10.28,1.42,0.35
+2024,1807,Lampung Timur,Lampung,142.7,13.19,1.57,0.29
+2024,1808,Way Kanan,Lampung,48.88,10.43,1.57,0.36
+2024,1809,Pesawaran,Lampung,55.01,11.86,1.7,0.36
+2024,1810,Pringsewu,Lampung,34.42,8.32,0.92,0.16
+2024,1811,Mesuji,Lampung,12.91,6.31,0.83,0.16
+2024,1812,Tulang Bawang Barat,Lampung,20.35,7.22,0.87,0.19
+2024,1813,Pesisir Barat,Lampung,20.22,12.64,2.1,0.49
+2024,1871,Kota Bandar Lampung,Lampung,83.88,7.37,0.97,0.21
+2024,1872,Kota Metro,Lampung,12.07,6.78,0.77,0.15
+2024,1901,Bangka,Bangka Belitung,14.76,4.24,0.62,0.14
+2024,1902,Belitung,Bangka Belitung,11.97,6.11,0.96,0.24
+2024,1903,Bangka Selatan,Bangka Belitung,8.1,3.74,0.27,0.07
+2024,1904,Bangka Tengah,Bangka Belitung,12.04,5.94,0.66,0.17
+2024,1905,Bangka Barat,Bangka Belitung,5.71,2.59,0.52,0.16
+2024,1906,Belitung Timur,Bangka Belitung,8.5,6.36,0.64,0.15
+2024,1971,Kota Pangkal Pinang,Bangka Belitung,8.87,4.04,0.68,0.19
+2024,2101,Bintan,Kepulauan Riau,9.17,5.44,0.61,0.13
+2024,2102,Karimun,Kepulauan Riau,13.99,5.78,0.99,0.21
+2024,2103,Natuna,Kepulauan Riau,4.17,5.04,0.31,0.03
+2024,2104,Lingga,Kepulauan Riau,9.02,9.99,1.25,0.37
+2024,2105,Kepulauan Anambas,Kepulauan Riau,2.98,6.67,0.94,0.18
+2024,2171,Kota Batam,Kepulauan Riau,83.57,4.85,0.65,0.12
+2024,2172,Kota Tanjung Pinang,Kepulauan Riau,15.39,6.86,0.86,0.14
+2024,3101,Kepulauan Seribu,DKI Jakarta,3.49,13.03,1.0,0.13
+2024,3171,Kota Jakarta Pusat,DKI Jakarta,42.33,4.63,0.57,0.12
+2024,3172,Kota Jakarta Utara,DKI Jakarta,120.51,6.44,1.01,0.26
+2024,3173,Kota Jakarta Barat,DKI Jakarta,106.48,3.94,0.26,0.04
+2024,3174,Kota Jakarta Selatan,DKI Jakarta,70.6,3.03,0.27,0.05
+2024,3175,Kota Jakarta Timur,DKI Jakarta,121.52,4.09,0.33,0.07
+2024,3201,Bogor,Jawa Barat,446.79,7.05,1.08,0.26
+2024,3202,Sukabumi,Jawa Barat,175.93,6.87,0.88,0.2
+2024,3203,Cianjur,Jawa Barat,239.3,10.14,1.58,0.41
+2024,3204,Bandung,Jawa Barat,239.87,6.19,0.61,0.09
+2024,3205,Garut,Jawa Barat,259.32,9.68,1.41,0.29
+2024,3206,Tasikmalaya,Jawa Barat,186.75,10.23,1.01,0.15
+2024,3207,Ciamis,Jawa Barat,90.79,7.39,0.99,0.2
+2024,3208,Kuningan,Jawa Barat,131.83,11.88,2.02,0.53
+2024,3209,Cirebon,Jawa Barat,245.92,11.0,1.69,0.36
+2024,3210,Majalengka,Jawa Barat,134.58,10.82,1.76,0.45
+2024,3211,Sumedang,Jawa Barat,108.89,9.1,1.6,0.45
+2024,3212,Indramayu,Jawa Barat,212.14,11.93,2.05,0.54
+2024,3213,Subang,Jawa Barat,152.56,9.49,1.63,0.46
+2024,3214,Purwakarta,Jawa Barat,81.44,8.41,1.37,0.35
+2024,3215,Karawang,Jawa Barat,187.77,7.86,1.18,0.28
+2024,3216,Bekasi,Jawa Barat,204.54,4.8,0.7,0.17
+2024,3217,Bandung Barat,Jawa Barat,179.7,10.49,1.17,0.23
+2024,3218,Pangandaran,Jawa Barat,35.95,8.75,1.23,0.29
+2024,3271,Kota Bogor,Jawa Barat,73.93,6.53,0.95,0.24
+2024,3272,Kota Sukabumi,Jawa Barat,24.1,7.2,0.88,0.18
+2024,3273,Kota Bandung,Jawa Barat,101.1,3.87,0.6,0.14
+2024,3274,Kota Cirebon,Jawa Barat,29.17,9.02,1.18,0.25
+2024,3275,Kota Bekasi,Jawa Barat,128.84,4.01,0.8,0.21
+2024,3276,Kota Depok,Jawa Barat,62.6,2.34,0.34,0.07
+2024,3277,Kota Cimahi,Jawa Barat,27.0,4.39,0.83,0.21
+2024,3278,Kota Tasikmalaya,Jawa Barat,76.71,11.1,1.35,0.26
+2024,3279,Kota Banjar,Jawa Barat,11.16,5.85,1.03,0.29
+2024,3301,Cilacap,Jawa Tengah,186.08,10.68,1.59,0.35
+2024,3302,Banyumas,Jawa Tengah,207.78,11.95,2.09,0.5
+2024,3303,Purbalingga,Jawa Tengah,136.72,14.18,2.1,0.5
+2024,3304,Banjarnegara,Jawa Tengah,137.68,14.71,2.38,0.61
+2024,3305,Kebumen,Jawa Tengah,187.95,15.71,2.35,0.48
+2024,3306,Purworejo,Jawa Tengah,78.02,10.87,1.08,0.18
+2024,3307,Wonosobo,Jawa Tengah,121.49,15.28,2.41,0.6
+2024,3308,Magelang,Jawa Tengah,143.8,10.83,1.23,0.23
+2024,3309,Boyolali,Jawa Tengah,95.96,9.63,1.56,0.4
+2024,3310,Klaten,Jawa Tengah,141.84,12.04,1.46,0.27
+2024,3311,Sukoharjo,Jawa Tengah,68.15,7.47,1.21,0.31
+2024,3312,Wonogiri,Jawa Tengah,102.57,10.71,1.53,0.33
+2024,3313,Karanganyar,Jawa Tengah,87.37,9.59,1.63,0.41
+2024,3314,Sragen,Jawa Tengah,110.65,12.41,2.42,0.67
+2024,3315,Grobogan,Jawa Tengah,159.0,11.43,1.9,0.43
+2024,3316,Blora,Jawa Tengah,99.14,11.42,1.59,0.32
+2024,3317,Rembang,Jawa Tengah,91.45,14.02,2.76,0.84
+2024,3318,Pati,Jawa Tengah,116.84,9.17,1.17,0.25
+2024,3319,Kudus,Jawa Tengah,65.69,7.23,1.02,0.24
+2024,3320,Jepara,Jawa Tengah,80.84,6.09,0.71,0.15
+2024,3321,Demak,Jawa Tengah,142.92,11.89,1.95,0.56
+2024,3322,Semarang,Jawa Tengah,76.87,6.96,0.91,0.18
+2024,3323,Temanggung,Jawa Tengah,68.77,8.67,0.97,0.18
+2024,3324,Kendal,Jawa Tengah,92.71,9.35,0.91,0.15
+2024,3325,Batang,Jawa Tengah,68.85,8.73,1.25,0.27
+2024,3326,Pekalongan,Jawa Tengah,81.72,8.95,1.16,0.23
+2024,3327,Pemalang,Jawa Tengah,194.2,14.92,2.56,0.61
+2024,3328,Tegal,Jawa Tengah,98.02,6.81,0.97,0.22
+2024,3329,Brebes,Jawa Tengah,283.28,15.6,2.5,0.55
+2024,3371,Kota Magelang,Jawa Tengah,7.25,5.94,0.92,0.19
+2024,3372,Kota Surakarta,Jawa Tengah,43.28,8.31,1.14,0.26
+2024,3373,Kota Salatiga,Jawa Tengah,9.33,4.57,0.61,0.11
+2024,3374,Kota Semarang,Jawa Tengah,77.79,4.03,0.59,0.12
+2024,3375,Kota Pekalongan,Jawa Tengah,21.16,6.71,0.84,0.17
+2024,3376,Kota Tegal,Jawa Tengah,19.17,7.64,1.34,0.32
+2024,3401,Kulon Progo,DI Yogyakarta,71.48,15.62,2.48,0.62
+2024,3402,Bantul,DI Yogyakarta,126.93,11.66,2.18,0.56
+2024,3403,Gunungkidul,DI Yogyakarta,120.41,15.18,2.56,0.65
+2024,3404,Sleman,DI Yogyakarta,97.94,7.46,1.21,0.27
+2024,3471,Kota Yogyakarta,DI Yogyakarta,28.79,6.26,0.76,0.14
+2024,3501,Pacitan,Jawa Timur,73.03,13.08,1.49,0.25
+2024,3502,Ponorogo,Jawa Timur,80.05,9.11,1.02,0.17
+2024,3503,Trenggalek,Jawa Timur,73.75,10.5,1.43,0.28
+2024,3504,Tulungagung,Jawa Timur,66.42,6.28,0.6,0.1
+2024,3505,Blitar,Jawa Timur,95.91,8.16,0.8,0.12
+2024,3506,Kediri,Jawa Timur,159.27,9.95,1.22,0.24
+2024,3507,Malang,Jawa Timur,240.14,8.98,0.98,0.16
+2024,3508,Lumajang,Jawa Timur,91.05,8.65,1.23,0.26
+2024,3509,Jember,Jawa Timur,224.77,9.01,1.01,0.18
+2024,3510,Banyuwangi,Jawa Timur,106.61,6.54,0.44,0.06
+2024,3511,Bondowoso,Jawa Timur,99.62,12.6,1.51,0.28
+2024,3512,Situbondo,Jawa Timur,80.17,11.51,1.19,0.18
+2024,3513,Probolinggo,Jawa Timur,197.11,16.45,2.63,0.6
+2024,3514,Pasuruan,Jawa Timur,144.84,8.63,1.09,0.21
+2024,3515,Sidoarjo,Jawa Timur,109.39,4.53,0.64,0.18
+2024,3516,Mojokerto,Jawa Timur,108.72,9.37,1.01,0.19
+2024,3517,Jombang,Jawa Timur,110.57,8.6,0.9,0.17
+2024,3518,Nganjuk,Jawa Timur,108.37,10.17,1.04,0.18
+2024,3519,Madiun,Jawa Timur,73.15,10.63,1.4,0.25
+2024,3520,Magetan,Jawa Timur,59.51,9.32,1.09,0.2
+2024,3521,Ngawi,Jawa Timur,116.47,13.81,2.22,0.61
+2024,3522,Bojonegoro,Jawa Timur,147.33,11.69,1.99,0.48
+2024,3523,Tuban,Jawa Timur,171.24,14.36,1.95,0.39
+2024,3524,Lamongan,Jawa Timur,146.98,12.16,1.88,0.44
+2024,3525,Gresik,Jawa Timur,142.39,10.32,1.58,0.33
+2024,3526,Bangkalan,Jawa Timur,190.94,18.66,2.03,0.39
+2024,3527,Sampang,Jawa Timur,214.32,20.83,2.86,0.57
+2024,3528,Pamekasan,Jawa Timur,123.46,13.41,1.05,0.14
+2024,3529,Sumenep,Jawa Timur,196.42,17.78,4.19,1.53
+2024,3571,Kota Kediri,Jawa Timur,19.24,6.51,1.02,0.25
+2024,3572,Kota Blitar,Jawa Timur,9.86,6.75,1.06,0.24
+2024,3573,Kota Malang,Jawa Timur,34.84,3.91,0.42,0.08
+2024,3574,Kota Probolinggo,Jawa Timur,15.24,6.18,0.98,0.21
+2024,3575,Kota Pasuruan,Jawa Timur,13.07,6.32,0.7,0.12
+2024,3576,Kota Mojokerto,Jawa Timur,7.43,5.57,0.74,0.13
+2024,3577,Kota Madiun,Jawa Timur,7.84,4.38,0.56,0.09
+2024,3578,Kota Surabaya,Jawa Timur,116.62,3.96,0.65,0.16
+2024,3579,Kota Batu,Jawa Timur,6.59,3.06,0.46,0.09
+2024,3601,Pandeglang,Banten,113.45,9.18,1.52,0.35
+2024,3602,Lebak,Banten,111.71,8.44,1.02,0.23
+2024,3603,Tangerang,Banten,266.43,6.55,1.2,0.34
+2024,3604,Serang,Banten,68.86,4.51,0.79,0.2
+2024,3671,Kota Tangerang,Banten,128.91,5.43,0.94,0.23
+2024,3672,Kota Cilegon,Banten,17.31,3.75,0.44,0.07
+2024,3673,Kota Serang,Banten,41.62,5.65,0.75,0.16
+2024,3674,Kota Tangerang Selatan,Banten,43.33,2.36,0.27,0.05
+2024,5101,Jembrana,Bali,12.9,4.51,0.36,0.05
+2024,5102,Tabanan,Bali,20.16,4.4,0.75,0.19
+2024,5103,Badung,Bali,16.87,2.23,0.32,0.08
+2024,5104,Gianyar,Bali,21.45,4.0,0.49,0.09
+2024,5105,Klungkung,Bali,9.68,5.3,0.23,0.03
+2024,5106,Bangli,Bali,11.79,5.06,0.89,0.23
+2024,5107,Karangasem,Bali,27.76,6.52,0.56,0.1
+2024,5108,Buleleng,Bali,36.55,5.39,0.72,0.14
+2024,5171,Kota Denpasar,Bali,27.27,2.59,0.36,0.08
+2024,5201,Lombok Barat,Nusa Tenggara Barat,96.57,12.65,1.84,0.43
+2024,5202,Lombok Tengah,Nusa Tenggara Barat,122.32,12.07,1.56,0.27
+2024,5203,Lombok Timur,Nusa Tenggara Barat,185.03,14.51,2.66,0.77
+2024,5204,Sumbawa,Nusa Tenggara Barat,63.0,12.87,1.98,0.53
+2024,5205,Dompu,Nusa Tenggara Barat,32.08,11.59,1.62,0.32
+2024,5206,Bima,Nusa Tenggara Barat,72.92,13.88,1.89,0.41
+2024,5207,Sumbawa Barat,Nusa Tenggara Barat,21.13,12.23,2.33,0.65
+2024,5208,Lombok Utara,Nusa Tenggara Barat,56.43,23.96,4.81,1.35
+2024,5271,Kota Mataram,Nusa Tenggara Barat,43.74,8.0,2.15,0.68
+2024,5272,Kota Bima,Nusa Tenggara Barat,15.81,8.12,1.44,0.39
+2024,5301,Kupang,Nusa Tenggara Timur,90.34,21.37,4.64,1.45
+2024,5302,Timor Tengah Selatan,Nusa Tenggara Timur,117.41,24.68,4.51,1.23
+2024,5303,Timor Tengah Utara,Nusa Tenggara Timur,55.03,20.89,3.9,0.94
+2024,5304,Belu,Nusa Tenggara Timur,32.57,13.86,2.26,0.51
+2024,5305,Alor,Nusa Tenggara Timur,41.89,19.87,2.25,0.49
+2024,5306,Flores Timur,Nusa Tenggara Timur,29.74,11.25,1.38,0.25
+2024,5307,Sikka,Nusa Tenggara Timur,38.73,11.89,1.57,0.31
+2024,5308,Ende,Nusa Tenggara Timur,62.37,22.57,4.44,1.18
+2024,5309,Ngada,Nusa Tenggara Timur,20.48,11.87,2.14,0.55
+2024,5310,Manggarai,Nusa Tenggara Timur,68.39,19.01,2.88,0.66
+2024,5311,Sumba Timur,Nusa Tenggara Timur,73.58,27.04,6.44,2.18
+2024,5312,Sumba Barat,Nusa Tenggara Timur,36.72,26.52,5.25,1.43
+2024,5313,Lembata,Nusa Tenggara Timur,37.72,24.22,4.35,1.06
+2024,5314,Rote Ndao,Nusa Tenggara Timur,52.89,25.78,5.23,1.41
+2024,5315,Manggarai Barat,Nusa Tenggara Timur,50.68,16.74,3.55,0.96
+2024,5316,Nagekeo,Nusa Tenggara Timur,18.68,12.3,1.56,0.26
+2024,5317,Sumba Tengah,Nusa Tenggara Timur,23.81,30.84,7.59,2.36
+2024,5318,Sumba Barat Daya,Nusa Tenggara Timur,102.05,27.2,3.84,0.85
+2024,5319,Manggarai Timur,Nusa Tenggara Timur,74.59,24.9,5.14,1.49
+2024,5320,Sabu Raijua,Nusa Tenggara Timur,30.98,28.13,5.52,1.67
+2024,5321,Malaka,Nusa Tenggara Timur,28.54,13.92,1.99,0.37
+2024,5371,Kota Kupang,Nusa Tenggara Timur,40.38,8.24,1.4,0.43
+2024,6101,Sambas,Kalimantan Barat,35.87,6.53,0.85,0.19
+2024,6102,Mempawah,Kalimantan Barat,13.22,4.83,0.49,0.09
+2024,6103,Sanggau,Kalimantan Barat,23.02,4.67,0.45,0.08
+2024,6104,Ketapang,Kalimantan Barat,46.59,8.5,1.49,0.41
+2024,6105,Sintang,Kalimantan Barat,35.18,8.03,0.94,0.16
+2024,6106,Kapuas Hulu,Kalimantan Barat,20.77,7.4,0.78,0.11
+2024,6107,Bengkayang,Kalimantan Barat,16.35,6.0,0.64,0.13
+2024,6108,Landak,Kalimantan Barat,35.38,8.98,1.48,0.38
+2024,6109,Sekadau,Kalimantan Barat,11.69,5.66,0.55,0.1
+2024,6110,Melawi,Kalimantan Barat,23.36,10.62,1.72,0.49
+2024,6111,Kayong Utara,Kalimantan Barat,10.56,8.84,1.63,0.47
+2024,6112,Kubu Raya,Kalimantan Barat,24.72,4.08,0.36,0.05
+2024,6171,Kota Pontianak,Kalimantan Barat,28.56,4.2,0.58,0.14
+2024,6172,Kota Singkawang,Kalimantan Barat,10.82,4.53,0.47,0.1
+2024,6201,Kotawaringin Barat,Kalimantan Tengah,13.43,4.11,0.43,0.1
+2024,6202,Kotawaringin Timur,Kalimantan Tengah,26.69,5.66,0.96,0.24
+2024,6203,Kapuas,Kalimantan Tengah,19.47,5.25,0.6,0.14
+2024,6204,Barito Selatan,Kalimantan Tengah,6.87,4.83,0.21,0.03
+2024,6205,Barito Utara,Kalimantan Tengah,7.6,5.67,0.89,0.22
+2024,6206,Katingan,Kalimantan Tengah,9.55,5.26,0.6,0.1
+2024,6207,Seruyan,Kalimantan Tengah,16.06,7.08,0.92,0.19
+2024,6208,Sukamara,Kalimantan Tengah,2.9,4.14,0.27,0.04
+2024,6209,Lamandau,Kalimantan Tengah,2.79,3.25,0.61,0.15
+2024,6210,Gunung Mas,Kalimantan Tengah,6.86,5.68,0.48,0.09
+2024,6211,Pulang Pisau,Kalimantan Tengah,5.91,4.56,0.83,0.19
+2024,6212,Murung Raya,Kalimantan Tengah,8.05,6.58,1.04,0.35
+2024,6213,Barito Timur,Kalimantan Tengah,8.74,6.66,0.93,0.19
+2024,6271,Kota Palangkaraya,Kalimantan Tengah,10.7,3.52,0.42,0.08
+2024,6301,Tanah Laut,Kalimantan Selatan,13.4,3.74,0.76,0.21
+2024,6302,Kotabaru,Kalimantan Selatan,15.98,4.45,0.45,0.08
+2024,6303,Banjar,Kalimantan Selatan,14.46,2.36,0.33,0.07
+2024,6304,Barito Kuala,Kalimantan Selatan,14.04,4.36,0.69,0.16
+2024,6305,Tapin,Kalimantan Selatan,6.55,3.33,0.23,0.03
+2024,6306,Hulu Sungai Selatan,Kalimantan Selatan,8.14,3.38,0.34,0.05
+2024,6307,Hulu Sungai Tengah,Kalimantan Selatan,16.03,5.81,0.75,0.14
+2024,6308,Hulu Sungai Utara,Kalimantan Selatan,13.93,5.75,0.54,0.08
+2024,6309,Tabalong,Kalimantan Selatan,14.97,5.64,0.95,0.2
+2024,6310,Tanah Bumbu,Kalimantan Selatan,14.68,3.41,0.54,0.14
+2024,6311,Balangan,Kalimantan Selatan,6.68,4.87,0.85,0.2
+2024,6371,Kota Banjarmasin,Kalimantan Selatan,33.38,4.58,0.49,0.08
+2024,6372,Kota Banjarbaru,Kalimantan Selatan,11.07,3.79,0.45,0.07
+2024,6401,Paser,Kalimantan Timur,25.28,8.63,0.86,0.17
+2024,6402,Kutai Kartanegara,Kalimantan Timur,59.0,7.28,0.65,0.1
+2024,6403,Berau,Kalimantan Timur,12.35,5.08,0.41,0.07
+2024,6407,Kutai Barat,Kalimantan Timur,14.49,9.56,1.18,0.24
+2024,6408,Kutai Timur,Kalimantan Timur,37.11,8.81,1.14,0.24
+2024,6409,Penajam Paser Utara,Kalimantan Timur,10.78,6.69,0.72,0.12
+2024,6411,Mahakam Ulu,Kalimantan Timur,2.9,10.75,1.64,0.43
+2024,6471,Kota Balikpapan,Kalimantan Timur,14.53,2.23,0.13,0.01
+2024,6472,Kota Samarinda,Kalimantan Timur,37.8,4.3,0.54,0.11
+2024,6474,Kota Bontang,Kalimantan Timur,7.11,3.74,0.31,0.04
+2024,6501,Bulungan,Kalimantan Utara,11.95,8.76,1.4,0.35
+2024,6502,Malinau,Kalimantan Utara,6.45,6.94,0.57,0.06
+2024,6503,Nunukan,Kalimantan Utara,12.61,5.73,0.82,0.23
+2024,6504,Tana Tidung,Kalimantan Utara,1.5,4.47,0.48,0.07
+2024,6571,Kota Tarakan,Kalimantan Utara,15.32,5.56,0.5,0.08
+2024,7101,Bolaang Mongondow,Sulawesi Utara,20.19,7.74,0.79,0.15
+2024,7102,Minahasa,Sulawesi Utara,22.78,6.53,1.38,0.41
+2024,7103,Kepulauan Sangihe,Sulawesi Utara,14.38,10.84,0.92,0.13
+2024,7104,Kepulauan Talaud,Sulawesi Utara,7.74,8.17,1.33,0.28
+2024,7105,Minahasa Selatan,Sulawesi Utara,19.13,8.97,0.79,0.11
+2024,7106,Minahasa Utara,Sulawesi Utara,14.32,6.95,0.73,0.11
+2024,7107,Minahasa Tenggara,Sulawesi Utara,12.59,11.72,1.53,0.3
+2024,7108,Bolaang Mongondow Utara,Sulawesi Utara,6.6,7.88,0.99,0.22
+2024,7109,Kepulauan Siau Tagulandang Biaro,Sulawesi Utara,5.63,8.32,1.06,0.19
+2024,7110,Bolaang Mongondow Timur,Sulawesi Utara,4.41,5.87,0.54,0.07
+2024,7111,Bolaang Mongondow Selatan,Sulawesi Utara,7.88,11.33,1.34,0.24
+2024,7171,Kota Manado,Sulawesi Utara,23.59,5.43,1.0,0.3
+2024,7172,Kota Bitung,Sulawesi Utara,14.5,6.27,1.11,0.25
+2024,7173,Kota Tomohon,Sulawesi Utara,6.07,5.38,0.8,0.22
+2024,7174,Kota Kotamobagu,Sulawesi Utara,7.05,5.12,0.5,0.08
+2024,7201,Banggai,Sulawesi Tengah,26.21,6.56,0.86,0.17
+2024,7202,Poso,Sulawesi Tengah,39.63,14.23,1.97,0.45
+2024,7203,Donggala,Sulawesi Tengah,47.68,15.3,3.0,0.75
+2024,7204,Toli-Toli,Sulawesi Tengah,30.39,12.45,1.73,0.42
+2024,7205,Buol,Sulawesi Tengah,23.05,13.08,2.2,0.47
+2024,7206,Morowali,Sulawesi Tengah,14.99,11.55,1.79,0.43
+2024,7207,Banggai Kepulauan,Sulawesi Tengah,14.86,12.32,1.26,0.22
+2024,7208,Parigi Moutong,Sulawesi Tengah,74.57,14.2,3.36,1.08
+2024,7209,Tojo Una Una,Sulawesi Tengah,26.12,16.36,2.04,0.4
+2024,7210,Sigi,Sulawesi Tengah,29.8,12.06,2.52,0.7
+2024,7211,Banggai Laut,Sulawesi Tengah,11.16,13.78,1.76,0.35
+2024,7212,Morowali Utara,Sulawesi Tengah,16.74,11.95,1.89,0.39
+2024,7271,Kota Palu,Sulawesi Tengah,24.57,5.94,0.65,0.09
+2024,7301,Kepulauan Selayar,Sulawesi Selatan,14.94,10.79,1.62,0.38
+2024,7302,Bulukumba,Sulawesi Selatan,28.6,6.71,0.85,0.16
+2024,7303,Bantaeng,Sulawesi Selatan,15.8,8.26,0.89,0.16
+2024,7304,Jeneponto,Sulawesi Selatan,43.9,11.82,1.48,0.29
+2024,7305,Takalar,Sulawesi Selatan,23.51,7.75,1.22,0.29
+2024,7306,Gowa,Sulawesi Selatan,55.13,6.85,0.67,0.11
+2024,7307,Sinjai,Sulawesi Selatan,19.4,7.82,1.16,0.25
+2024,7308,Bone,Sulawesi Selatan,73.03,9.58,1.14,0.19
+2024,7309,Maros,Sulawesi Selatan,34.0,9.32,1.06,0.19
+2024,7310,Pangkajene dan Kepulauan,Sulawesi Selatan,42.94,12.41,1.78,0.38
+2024,7311,Barru,Sulawesi Selatan,14.64,8.31,1.11,0.22
+2024,7312,Soppeng,Sulawesi Selatan,15.9,6.9,0.79,0.15
+2024,7313,Wajo,Sulawesi Selatan,26.57,6.47,1.02,0.22
+2024,7314,Sidenreng Rappang,Sulawesi Selatan,15.48,5.02,0.51,0.08
+2024,7315,Pinrang,Sulawesi Selatan,33.04,8.55,1.37,0.34
+2024,7316,Enrekang,Sulawesi Selatan,24.06,11.25,1.89,0.44
+2024,7317,Luwu,Sulawesi Selatan,44.24,11.7,2.05,0.53
+2024,7318,Tana Toraja,Sulawesi Selatan,26.3,10.79,1.26,0.25
+2024,7322,Luwu Utara,Sulawesi Selatan,36.46,11.24,2.1,0.58
+2024,7324,Luwu Timur,Sulawesi Selatan,20.7,6.55,1.31,0.39
+2024,7326,Toraja Utara,Sulawesi Selatan,25.97,10.73,1.21,0.24
+2024,7371,Kota Makassar,Sulawesi Selatan,79.53,4.97,0.81,0.18
+2024,7372,Kota Parepare,Sulawesi Selatan,7.94,5.27,0.72,0.14
+2024,7373,Kota Palopo,Sulawesi Selatan,14.43,7.35,0.94,0.19
+2024,7401,Kolaka,Sulawesi Tenggara,33.2,11.67,1.78,0.47
+2024,7402,Konawe,Sulawesi Tenggara,33.99,13.25,2.33,0.65
+2024,7403,Muna,Sulawesi Tenggara,31.82,13.78,1.87,0.36
+2024,7404,Buton,Sulawesi Tenggara,14.41,13.99,1.68,0.35
+2024,7405,Konawe Selatan,Sulawesi Tenggara,37.09,11.2,1.59,0.34
+2024,7406,Bombana,Sulawesi Tenggara,20.56,10.54,1.15,0.21
+2024,7407,Wakatobi,Sulawesi Tenggara,14.93,14.36,2.87,0.83
+2024,7408,Kolaka Utara,Sulawesi Tenggara,22.07,13.51,2.65,0.66
+2024,7409,Konawe Utara,Sulawesi Tenggara,8.94,13.17,2.52,0.76
+2024,7410,Buton Utara,Sulawesi Tenggara,9.18,14.09,3.12,0.94
+2024,7411,Kolaka Timur,Sulawesi Tenggara,20.33,13.71,1.87,0.44
+2024,7412,Konawe Kepulauan,Sulawesi Tenggara,5.36,15.54,2.78,0.76
+2024,7413,Muna Barat,Sulawesi Tenggara,11.36,13.38,2.08,0.45
+2024,7414,Buton Tengah,Sulawesi Tenggara,13.52,14.4,1.82,0.32
+2024,7415,Buton Selatan,Sulawesi Tenggara,11.5,14.28,1.97,0.38
+2024,7471,Kota Kendari,Sulawesi Tenggara,18.2,4.23,0.7,0.14
+2024,7472,Kota Bau Bau,Sulawesi Tenggara,13.25,7.4,1.61,0.48
+2024,7501,Gorontalo,Gorontalo,61.91,16.43,3.41,0.89
+2024,7502,Boalemo,Gorontalo,31.53,17.83,3.75,1.12
+2024,7503,Bone Bolango,Gorontalo,23.67,14.8,2.86,0.72
+2024,7504,Pohuwato,Gorontalo,28.93,17.11,2.89,0.7
+2024,7505,Gorontalo Utara,Gorontalo,18.99,16.86,3.41,1.02
+2024,7571,Kota Gorontalo,Gorontalo,12.97,5.74,0.67,0.12
+2024,7601,Pasangkayu,Sulawesi Barat,9.95,5.21,0.66,0.11
+2024,7602,Mamuju,Sulawesi Barat,22.64,7.15,1.12,0.26
+2024,7603,Mamasa,Sulawesi Barat,23.61,14.2,1.75,0.33
+2024,7604,Polewali Mandar,Sulawesi Barat,70.42,15.66,3.09,0.88
+2024,7605,Majene,Sulawesi Barat,24.41,13.64,1.82,0.41
+2024,7606,Mamuju Tengah,Sulawesi Barat,11.16,7.72,0.92,0.19
+2024,8101,Maluku Tengah,Maluku,66.65,17.67,4.0,1.31
+2024,8102,Maluku Tenggara,Maluku,21.47,21.22,2.65,0.59
+2024,8103,Kepulauan Tanimbar,Maluku,26.76,23.66,4.23,1.03
+2024,8104,Buru,Maluku,25.02,16.08,2.47,0.58
+2024,8105,Seram Bagian Timur,Maluku,24.34,21.03,3.22,0.78
+2024,8106,Seram Bagian Barat,Maluku,38.78,22.31,3.38,0.81
+2024,8107,Kepulauan Aru,Maluku,22.45,23.39,4.56,1.23
+2024,8108,Maluku Barat Daya,Maluku,20.63,27.95,3.52,0.63
+2024,8109,Buru Selatan,Maluku,9.61,14.91,2.34,0.46
+2024,8171,Kota Ambon,Maluku,25.81,5.13,0.71,0.16
+2024,8172,Kota Tual,Maluku,16.17,20.01,3.03,0.65
+2024,8201,Halmahera Barat,Maluku Utara,10.65,8.75,1.49,0.36
+2024,8202,Halmahera Tengah,Maluku Utara,6.44,10.71,1.73,0.41
+2024,8203,Halmahera Utara,Maluku Utara,9.48,4.71,0.48,0.07
+2024,8204,Halmahera Selatan,Maluku Utara,13.69,5.63,0.53,0.08
+2024,8205,Kepulauan Sula,Maluku Utara,8.31,7.96,1.01,0.2
+2024,8206,Halmahera Timur,Maluku Utara,12.27,11.91,1.49,0.33
+2024,8207,Pulau Morotai,Maluku Utara,3.69,5.11,0.66,0.14
+2024,8208,Pulau Taliabu,Maluku Utara,3.97,7.13,1.08,0.3
+2024,8271,Kota Ternate,Maluku Utara,7.88,3.14,0.78,0.25
+2024,8272,Kota Tidore Kepulauan,Maluku Utara,6.72,6.56,0.95,0.21
+2024,9103,Jayapura,Papua,15.21,11.6,3.26,1.24
+2024,9105,Kepulauan Yapen,Papua,26.09,25.69,7.32,2.78
+2024,9106,Biak Numfor,Papua,35.94,23.46,6.22,2.13
+2024,9110,Sarmi,Papua,5.87,14.05,1.87,0.41
+2024,9111,Keerom,Papua,9.52,15.84,3.11,0.82
+2024,9115,Waropen,Papua,10.3,29.85,6.16,1.69
+2024,9119,Supiori,Papua,8.25,37.72,12.81,5.35
+2024,9120,Mamberamo Raya,Papua,7.89,30.29,3.37,0.55
+2024,9171,Kota Jayapura,Papua,33.84,10.72,2.35,0.79
+2024,9202,Manokwari,Papua Barat,33.29,18.45,3.3,0.82
+2024,9203,Fak Fak,Papua Barat,17.67,20.86,4.6,1.35
+2024,9206,Teluk Bintuni,Papua Barat,19.33,26.99,6.5,2.25
+2024,9207,Teluk Wondama,Papua Barat,10.3,28.47,4.68,1.15
+2024,9208,Kaimana,Papua Barat,10.06,14.41,3.17,1.01
+2024,9211,Manokwari Selatan,Papua Barat,7.64,26.83,5.17,1.54
+2024,9212,Pegunungan Arfak,Papua Barat,11.87,31.76,5.54,1.38
+2024,9301,Merauke,Papua Selatan,24.72,10.19,1.98,0.67
+2024,9302,Boven Digoel,Papua Selatan,14.05,19.24,3.96,1.17
+2024,9303,Mappi,Papua Selatan,27.18,25.7,4.58,1.2
+2024,9304,Asmat,Papua Selatan,26.24,24.5,4.17,1.04
+2024,9401,Nabire,Papua Tengah,36.02,24.0,5.85,2.08
+2024,9402,Puncak Jaya,Papua Tengah,48.78,35.94,9.81,3.48
+2024,9403,Paniai,Papua Tengah,64.34,37.07,6.78,1.82
+2024,9404,Mimika,Papua Tengah,32.09,14.18,3.82,1.42
+2024,9405,Puncak,Papua Tengah,43.73,37.49,5.98,1.22
+2024,9406,Dogiyai,Papua Tengah,30.42,30.03,6.1,1.59
+2024,9407,Intan Jaya,Papua Tengah,22.25,41.42,12.46,4.66
+2024,9408,Deiyai,Papua Tengah,30.85,39.01,4.76,1.01
+2024,9501,Jayawijaya,Papua Pegunungan,68.36,32.28,7.85,2.6
+2024,9502,Pegunungan Bintang,Papua Pegunungan,22.87,28.95,6.1,1.83
+2024,9503,Yahukimo,Papua Pegunungan,68.32,33.82,4.67,0.93
+2024,9504,Tolikara,Papua Pegunungan,48.73,31.22,2.79,0.42
+2024,9505,Mamberamo Tengah,Papua Pegunungan,20.2,35.27,5.1,1.31
+2024,9506,Yalimo,Papua Pegunungan,21.44,30.02,9.19,4.26
+2024,9507,Lanny Jaya,Papua Pegunungan,72.1,34.12,6.73,2.01
+2024,9508,Nduga,Papua Pegunungan,43.42,36.28,5.42,1.22
+2024,9601,Sorong,Papua Barat Daya,25.69,25.71,6.81,2.35
+2024,9602,Sorong Selatan,Papua Barat Daya,9.4,17.83,3.85,1.07
+2024,9603,Raja Ampat,Papua Barat Daya,8.13,15.83,3.1,0.87
+2024,9604,Tambrauw,Papua Barat Daya,5.02,29.88,4.55,1.09
+2024,9605,Maybrat,Papua Barat Daya,13.35,29.18,4.48,1.08
+2024,9671,Kota Sorong,Papua Barat Daya,40.68,13.67,3.07,1.01
+2025,1101,Aceh Selatan,Aceh,25.39,9.89,1.552,0.461
+2025,1102,Aceh Tenggara,Aceh,22.52,9.78,1.036,0.162
+2025,1103,Aceh Timur,Aceh,52.23,11.24,1.021,0.151
+2025,1104,Aceh Tengah,Aceh,27.76,12.29,2.371,0.726
+2025,1105,Aceh Barat,Aceh,34.55,15.5,2.45,0.533
+2025,1106,Aceh Besar,Aceh,49.9,11.05,1.896,0.529
+2025,1107,Pidie,Aceh,77.7,16.46,1.993,0.383
+2025,1108,Aceh Utara,Aceh,93.43,14.27,2.058,0.467
+2025,1109,Simeulue,Aceh,15.58,15.52,2.227,0.458
+2025,1110,Aceh Singkil,Aceh,22.51,17.07,3.237,0.913
+2025,1111,Bireuen,Aceh,51.6,10.3,1.168,0.192
+2025,1112,Aceh Barat Daya,Aceh,21.47,13.3,1.965,0.413
+2025,1113,Gayo Lues,Aceh,16.59,16.77,1.808,0.296
+2025,1114,Aceh Jaya,Aceh,10.5,10.37,1.621,0.365
+2025,1115,Nagan Raya,Aceh,27.24,15.42,2.337,0.633
+2025,1116,Aceh Tamiang,Aceh,33.96,10.84,1.528,0.334
+2025,1117,Bener Meriah,Aceh,25.59,16.2,3.079,0.877
+2025,1118,Pidie Jaya,Aceh,27.62,16.12,2.432,0.556
+2025,1171,Kota Banda Aceh,Aceh,15.87,5.45,0.71,0.136
+2025,1172,Kota Sabang,Aceh,4.55,12.75,2.012,0.504
+2025,1173,Kota Lhokseumawe,Aceh,19.9,9.01,1.368,0.334
+2025,1174,Kota Langsa,Aceh,16.28,8.59,1.44,0.377
+2025,1175,Kota Subulussalam,Aceh,11.95,13.88,2.794,0.723
+2025,1201,Tapanuli Tengah,Sumatera Utara,46.79,11.03,1.885,0.485
+2025,1202,Tapanuli Utara,Sumatera Utara,23.29,7.47,0.897,0.166
+2025,1203,Tapanuli Selatan,Sumatera Utara,17.77,6.16,0.608,0.104
+2025,1204,Nias,Sumatera Utara,21.23,14.51,1.952,0.415
+2025,1205,Langkat,Sumatera Utara,90.28,8.42,1.141,0.222
+2025,1206,Karo,Sumatera Utara,30.67,6.66,0.615,0.114
+2025,1207,Deli Serdang,Sumatera Utara,77.7,3.11,0.553,0.164
+2025,1208,Simalungun,Sumatera Utara,61.12,6.91,1.013,0.19
+2025,1209,Asahan,Sumatera Utara,54.57,7.18,1.103,0.29
+2025,1210,Labuhanbatu,Sumatera Utara,40.49,7.37,0.659,0.105
+2025,1211,Dairi,Sumatera Utara,20.05,6.98,0.56,0.091
+2025,1212,Toba,Sumatera Utara,13.46,7.21,0.877,0.179
+2025,1213,Mandailing Natal,Sumatera Utara,37.16,7.91,0.751,0.124
+2025,1214,Nias Selatan,Sumatera Utara,54.29,16.16,2.228,0.509
+2025,1215,Pakpak Bharat,Sumatera Utara,3.53,6.4,0.709,0.148
+2025,1216,Humbang Hasundutan,Sumatera Utara,15.62,7.8,1.011,0.177
+2025,1217,Samosir,Sumatera Utara,13.8,10.79,0.84,0.086
+2025,1218,Serdang Bedagai,Sumatera Utara,38.14,6.18,0.618,0.123
+2025,1219,Batu Bara,Sumatera Utara,44.28,10.1,1.128,0.197
+2025,1220,Padang Lawas Utara,Sumatera Utara,24.8,8.04,0.938,0.171
+2025,1221,Padang Lawas,Sumatera Utara,23.69,7.32,0.749,0.143
+2025,1222,Labuhanbatu Selatan,Sumatera Utara,26.12,6.8,1.059,0.338
+2025,1223,Labuhanbatu Utara,Sumatera Utara,32.09,8.42,1.493,0.382
+2025,1224,Nias Utara,Sumatera Utara,29.65,20.79,4.0,1.147
+2025,1225,Nias Barat,Sumatera Utara,18.64,22.47,2.234,0.341
+2025,1271,Kota Medan,Sumatera Utara,171.6,7.25,1.309,0.345
+2025,1272,Kota Pematangsiantar,Sumatera Utara,16.53,6.24,0.431,0.054
+2025,1273,Kota Sibolga,Sumatera Utara,9.02,10.28,1.294,0.239
+2025,1274,Kota Tanjungbalai,Sumatera Utara,20.02,10.67,1.614,0.375
+2025,1275,Kota Binjai,Sumatera Utara,13.87,4.71,0.676,0.14
+2025,1276,Kota Tebing Tinggi,Sumatera Utara,15.36,8.74,1.062,0.249
+2025,1277,Kota Padangsidimpuan,Sumatera Utara,13.57,5.61,0.534,0.063
+2025,1278,Kota Gunungsitoli,Sumatera Utara,21.05,13.85,2.01,0.426
+2025,1301,Pesisir Selatan,Sumatera Barat,31.53,6.52,0.973,0.22
+2025,1302,Solok,Sumatera Barat,25.23,6.52,0.629,0.103
+2025,1303,Sijunjung,Sumatera Barat,13.55,5.15,0.656,0.14
+2025,1304,Tanah Datar,Sumatera Barat,12.57,3.59,0.214,0.024
+2025,1305,Padang Pariaman,Sumatera Barat,25.08,5.86,0.795,0.177
+2025,1306,Agam,Sumatera Barat,30.57,5.97,0.669,0.103
+2025,1307,Lima Puluh Kota,Sumatera Barat,24.61,6.1,0.633,0.103
+2025,1308,Pasaman,Sumatera Barat,18.0,6.02,0.655,0.116
+2025,1309,Kepulauan Mentawai,Sumatera Barat,13.74,13.22,1.879,0.459
+2025,1310,Dharmasraya,Sumatera Barat,13.52,4.61,0.552,0.117
+2025,1311,Solok Selatan,Sumatera Barat,11.44,6.0,0.927,0.215
+2025,1312,Pasaman Barat,Sumatera Barat,31.68,6.3,0.846,0.143
+2025,1371,Kota Padang,Sumatera Barat,37.38,3.63,0.599,0.163
+2025,1372,Kota Solok,Sumatera Barat,2.31,2.91,0.35,0.069
+2025,1373,Kota Sawahlunto,Sumatera Barat,1.79,2.72,0.331,0.122
+2025,1374,Kota Padang Panjang,Sumatera Barat,2.9,4.97,0.429,0.052
+2025,1375,Kota Bukittinggi,Sumatera Barat,5.46,3.78,0.44,0.112
+2025,1376,Kota Payakumbuh,Sumatera Barat,7.37,4.95,0.535,0.089
+2025,1377,Kota Pariaman,Sumatera Barat,3.63,3.83,0.44,0.07
+2025,1401,Kampar,Riau,58.71,6.29,0.94,0.194
+2025,1402,Indragiri Hulu,Riau,26.88,5.83,0.44,0.085
+2025,1403,Bengkalis,Riau,35.11,6.08,0.635,0.113
+2025,1404,Indragiri Hilir,Riau,35.97,4.95,0.348,0.063
+2025,1405,Pelalawan,Riau,43.49,7.24,0.859,0.182
+2025,1406,Rokan Hulu,Riau,70.65,8.71,0.835,0.177
+2025,1407,Rokan Hilir,Riau,55.49,7.16,1.162,0.357
+2025,1408,Siak,Riau,23.5,4.4,0.399,0.057
+2025,1409,Kuantan Singingi,Riau,22.68,6.99,0.736,0.155
+2025,1410,Kepulauan Meranti,Riau,39.41,20.51,3.045,0.695
+2025,1471,Kota Pekanbaru,Riau,39.16,3.19,0.337,0.081
+2025,1472,Kota Dumai,Riau,9.92,3.08,0.202,0.018
+2025,1501,Kerinci,Jambi,18.28,7.48,0.794,0.138
+2025,1502,Merangin,Jambi,32.38,8.07,1.6,0.446
+2025,1503,Sarolangun,Jambi,28.08,8.74,1.18,0.247
+2025,1504,Batanghari,Jambi,22.83,8.27,1.324,0.275
+2025,1505,Muaro Jambi,Jambi,21.05,4.32,0.394,0.092
+2025,1506,Tanjung Jabung Barat,Jambi,33.88,9.67,1.012,0.141
+2025,1507,Tanjung Jabung Timur,Jambi,21.54,9.96,1.402,0.305
+2025,1508,Bungo,Jambi,20.73,5.17,0.698,0.162
+2025,1509,Tebo,Jambi,22.1,5.97,0.399,0.067
+2025,1571,Kota Jambi,Jambi,47.21,7.69,1.128,0.226
+2025,1572,Kota Sungai Penuh,Jambi,2.87,3.23,0.16,0.014
+2025,1601,Ogan Komering Ulu,Sumatera Selatan,39.58,10.08,1.478,0.331
+2025,1602,Ogan Komering Ilir,Sumatera Selatan,105.26,11.84,1.355,0.262
+2025,1603,Muara Enim,Sumatera Selatan,64.82,9.45,1.282,0.28
+2025,1604,Lahat,Sumatera Selatan,58.66,13.69,2.546,0.716
+2025,1605,Musi Rawas,Sumatera Selatan,54.7,12.67,1.329,0.227
+2025,1606,Musi Banyuasin,Sumatera Selatan,69.61,9.97,1.492,0.38
+2025,1607,Banyuasin,Sumatera Selatan,77.63,8.48,1.077,0.22
+2025,1608,Ogan Komering Ulu Timur,Sumatera Selatan,62.89,8.86,0.967,0.179
+2025,1609,Ogan Komering Ulu Selatan,Sumatera Selatan,35.49,9.17,1.273,0.265
+2025,1610,Ogan Ilir,Sumatera Selatan,53.21,11.69,1.451,0.368
+2025,1611,Empat Lawang,Sumatera Selatan,27.88,10.48,1.444,0.324
+2025,1612,Penukal Abab Lematang Ilir,Sumatera Selatan,18.87,9.27,1.013,0.193
+2025,1613,Musi Rawas Utara,Sumatera Selatan,31.25,15.25,2.22,0.472
+2025,1671,Kota Palembang,Sumatera Selatan,162.31,9.04,1.403,0.322
+2025,1672,Kota Pagar Alam,Sumatera Selatan,11.2,7.7,0.816,0.116
+2025,1673,Kota Lubuk Linggau,Sumatera Selatan,26.35,10.49,1.098,0.159
+2025,1674,Kota Prabumulih,Sumatera Selatan,19.89,9.75,1.187,0.245
+2025,1701,Bengkulu Selatan,Bengkulu,29.82,15.72,2.566,0.569
+2025,1702,Rejang Lebong,Bengkulu,33.19,11.71,1.818,0.411
+2025,1703,Bengkulu Utara,Bengkulu,31.99,10.07,1.089,0.197
+2025,1704,Kaur,Bengkulu,20.26,15.82,2.613,0.6
+2025,1705,Seluma,Bengkulu,32.81,15.98,3.501,1.044
+2025,1706,Mukomuko,Bengkulu,19.67,10.05,1.535,0.348
+2025,1707,Lebong,Bengkulu,12.2,10.1,1.556,0.316
+2025,1708,Kepahiang,Bengkulu,15.2,10.38,0.929,0.171
+2025,1709,Bengkulu Tengah,Bengkulu,11.61,9.74,1.55,0.327
+2025,1771,Kota Bengkulu,Bengkulu,46.23,11.91,1.828,0.419
+2025,1801,Lampung Selatan,Lampung,127.74,12.05,2.041,0.602
+2025,1802,Lampung Tengah,Lampung,127.83,9.59,1.581,0.423
+2025,1803,Lampung Utara,Lampung,98.99,15.78,2.584,0.684
+2025,1804,Lampung Barat,Lampung,31.23,9.93,1.515,0.392
+2025,1805,Tulang Bawang,Lampung,36.14,7.54,0.792,0.164
+2025,1806,Tanggamus,Lampung,63.56,10.1,1.071,0.189
+2025,1807,Lampung Timur,Lampung,132.17,12.15,1.591,0.324
+2025,1808,Way Kanan,Lampung,44.17,9.36,1.246,0.252
+2025,1809,Pesawaran,Lampung,51.09,10.93,1.327,0.223
+2025,1810,Pringsewu,Lampung,31.66,7.6,0.582,0.1
+2025,1811,Mesuji,Lampung,12.14,5.92,0.476,0.066
+2025,1812,Tulang Bawang Barat,Lampung,19.04,6.72,0.642,0.087
+2025,1813,Pesisir Barat,Lampung,19.51,12.13,1.698,0.351
+2025,1871,Kota Bandar Lampung,Lampung,80.19,6.95,1.142,0.27
+2025,1872,Kota Metro,Lampung,11.58,6.44,0.547,0.066
+2025,1901,Bangka,Bangka Belitung,16.58,4.71,0.507,0.085
+2025,1902,Belitung,Bangka Belitung,12.76,6.44,0.625,0.113
+2025,1903,Bangka Selatan,Bangka Belitung,9.13,4.17,0.496,0.085
+2025,1904,Bangka Tengah,Bangka Belitung,13.71,6.7,0.953,0.241
+2025,1905,Bangka Barat,Bangka Belitung,6.51,2.92,0.224,0.043
+2025,1906,Belitung Timur,Bangka Belitung,9.04,6.69,1.347,0.352
+2025,1971,Kota Pangkal Pinang,Bangka Belitung,9.99,4.5,0.636,0.134
+2025,2101,Bintan,Kepulauan Riau,8.11,4.77,0.518,0.099
+2025,2102,Karimun,Kepulauan Riau,12.56,5.16,0.487,0.085
+2025,2103,Natuna,Kepulauan Riau,4.01,4.81,0.708,0.14
+2025,2104,Lingga,Kepulauan Riau,8.24,9.12,0.931,0.149
+2025,2105,Kepulauan Anambas,Kepulauan Riau,2.86,6.35,1.017,0.262
+2025,2171,Kota Batam,Kepulauan Riau,68.04,3.81,0.755,0.243
+2025,2172,Kota Tanjung Pinang,Kepulauan Riau,13.47,5.96,0.472,0.057
+2025,3101,Kepulauan Seribu,DKI Jakarta,3.35,12.37,1.95,0.425
+2025,3171,Kota Jakarta Pusat,DKI Jakarta,43.06,4.7,0.604,0.109
+2025,3172,Kota Jakarta Utara,DKI Jakarta,119.02,6.33,0.989,0.227
+2025,3173,Kota Jakarta Barat,DKI Jakarta,106.39,3.91,0.683,0.158
+2025,3174,Kota Jakarta Selatan,DKI Jakarta,75.66,3.23,0.505,0.103
+2025,3175,Kota Jakarta Timur,DKI Jakarta,117.4,3.94,0.374,0.053
+2025,3201,Bogor,Jawa Barat,401.86,6.26,1.04,0.234
+2025,3202,Sukabumi,Jawa Barat,164.63,6.41,1.038,0.282
+2025,3203,Cianjur,Jawa Barat,232.61,9.82,1.391,0.384
+2025,3204,Bandung,Jawa Barat,236.06,6.04,0.824,0.18
+2025,3205,Garut,Jawa Barat,252.56,9.39,1.384,0.341
+2025,3206,Tasikmalaya,Jawa Barat,185.99,10.15,1.535,0.38
+2025,3207,Ciamis,Jawa Barat,88.72,7.19,0.709,0.105
+2025,3208,Kuningan,Jawa Barat,119.67,10.74,1.378,0.262
+2025,3209,Cirebon,Jawa Barat,229.64,10.23,1.79,0.467
+2025,3210,Majalengka,Jawa Barat,128.67,10.31,1.157,0.239
+2025,3211,Sumedang,Jawa Barat,105.82,8.81,1.488,0.345
+2025,3212,Indramayu,Jawa Barat,196.78,11.02,1.897,0.515
+2025,3213,Subang,Jawa Barat,148.99,9.23,1.417,0.361
+2025,3214,Purwakarta,Jawa Barat,76.51,7.87,0.974,0.183
+2025,3215,Karawang,Jawa Barat,169.8,7.08,1.123,0.293
+2025,3216,Bekasi,Jawa Barat,191.0,4.36,0.443,0.091
+2025,3217,Bandung Barat,Jawa Barat,169.66,9.87,1.309,0.302
+2025,3218,Pangandaran,Jawa Barat,33.09,8.03,0.873,0.131
+2025,3271,Kota Bogor,Jawa Barat,67.16,5.89,0.701,0.134
+2025,3272,Kota Sukabumi,Jawa Barat,23.17,6.9,0.837,0.168
+2025,3273,Kota Bandung,Jawa Barat,99.12,3.78,0.587,0.139
+2025,3274,Kota Cirebon,Jawa Barat,28.12,8.66,0.936,0.163
+2025,3275,Kota Bekasi,Jawa Barat,129.54,3.96,0.513,0.08
+2025,3276,Kota Depok,Jawa Barat,63.45,2.31,0.307,0.067
+2025,3277,Kota Cimahi,Jawa Barat,25.97,4.2,0.344,0.042
+2025,3278,Kota Tasikmalaya,Jawa Barat,75.22,10.84,1.887,0.45
+2025,3279,Kota Banjar,Jawa Barat,10.97,5.73,0.811,0.158
+2025,3301,Cilacap,Jawa Tengah,164.22,9.41,1.391,0.313
+2025,3302,Banyumas,Jawa Tengah,194.87,11.15,1.796,0.427
+2025,3303,Purbalingga,Jawa Tengah,121.8,12.55,1.565,0.299
+2025,3304,Banjarnegara,Jawa Tengah,124.66,13.28,1.8,0.365
+2025,3305,Kebumen,Jawa Tengah,162.54,13.58,1.954,0.402
+2025,3306,Purworejo,Jawa Tengah,72.18,10.06,1.537,0.335
+2025,3307,Wonosobo,Jawa Tengah,106.29,13.34,2.25,0.542
+2025,3308,Magelang,Jawa Tengah,132.21,9.9,1.036,0.17
+2025,3309,Boyolali,Jawa Tengah,86.97,8.71,1.251,0.309
+2025,3310,Klaten,Jawa Tengah,129.68,11.0,1.625,0.381
+2025,3311,Sukoharjo,Jawa Tengah,62.66,6.83,0.619,0.098
+2025,3312,Wonogiri,Jawa Tengah,91.9,9.59,1.39,0.283
+2025,3313,Karanganyar,Jawa Tengah,77.66,8.48,0.908,0.17
+2025,3314,Sragen,Jawa Tengah,100.08,11.22,2.176,0.596
+2025,3315,Grobogan,Jawa Tengah,148.1,10.63,1.866,0.465
+2025,3316,Blora,Jawa Tengah,92.01,10.58,1.265,0.27
+2025,3317,Rembang,Jawa Tengah,85.32,13.01,3.345,1.073
+2025,3318,Pati,Jawa Tengah,105.27,8.24,1.143,0.24
+2025,3319,Kudus,Jawa Tengah,60.37,6.59,0.765,0.149
+2025,3320,Jepara,Jawa Tengah,77.67,5.79,0.533,0.096
+2025,3321,Demak,Jawa Tengah,131.47,10.87,1.654,0.406
+2025,3322,Semarang,Jawa Tengah,70.29,6.3,0.908,0.207
+2025,3323,Temanggung,Jawa Tengah,62.05,7.78,0.665,0.103
+2025,3324,Kendal,Jawa Tengah,83.73,8.4,1.465,0.349
+2025,3325,Batang,Jawa Tengah,61.75,7.79,1.123,0.266
+2025,3326,Pekalongan,Jawa Tengah,73.8,8.05,0.961,0.173
+2025,3327,Pemalang,Jawa Tengah,173.38,13.32,2.389,0.62
+2025,3328,Tegal,Jawa Tengah,88.7,6.16,0.726,0.123
+2025,3329,Brebes,Jawa Tengah,257.29,14.15,2.203,0.502
+2025,3371,Kota Magelang,Jawa Tengah,6.93,5.68,0.533,0.091
+2025,3372,Kota Surakarta,Jawa Tengah,40.08,7.69,1.314,0.389
+2025,3373,Kota Salatiga,Jawa Tengah,8.66,4.2,0.606,0.12
+2025,3374,Kota Semarang,Jawa Tengah,74.36,3.8,0.405,0.054
+2025,3375,Kota Pekalongan,Jawa Tengah,19.49,6.14,0.968,0.265
+2025,3376,Kota Tegal,Jawa Tengah,18.27,7.28,1.417,0.349
+2025,3401,Kulon Progo,DI Yogyakarta,67.25,14.53,1.81,0.336
+2025,3402,Bantul,DI Yogyakarta,127.25,11.54,1.282,0.257
+2025,3403,Gunungkidul,DI Yogyakarta,113.48,14.15,1.994,0.424
+2025,3404,Sleman,DI Yogyakarta,89.28,6.71,0.756,0.141
+2025,3471,Kota Yogyakarta,DI Yogyakarta,28.58,6.14,0.61,0.083
+2025,3501,Pacitan,Jawa Timur,72.47,12.97,1.768,0.358
+2025,3502,Ponorogo,Jawa Timur,77.93,8.86,1.223,0.264
+2025,3503,Trenggalek,Jawa Timur,72.35,10.29,1.089,0.2
+2025,3504,Tulungagung,Jawa Timur,63.17,5.96,0.42,0.042
+2025,3505,Blitar,Jawa Timur,89.04,7.57,1.206,0.272
+2025,3506,Kediri,Jawa Timur,157.47,9.81,0.995,0.188
+2025,3507,Malang,Jawa Timur,235.63,8.78,0.895,0.154
+2025,3508,Lumajang,Jawa Timur,90.64,8.6,0.681,0.079
+2025,3509,Jember,Jawa Timur,216.76,8.67,0.533,0.051
+2025,3510,Banyuwangi,Jawa Timur,100.13,6.13,0.406,0.063
+2025,3511,Bondowoso,Jawa Timur,96.71,12.2,1.663,0.374
+2025,3512,Situbondo,Jawa Timur,78.02,11.17,0.709,0.067
+2025,3513,Probolinggo,Jawa Timur,196.26,16.31,1.839,0.389
+2025,3514,Pasuruan,Jawa Timur,138.43,8.21,0.801,0.148
+2025,3515,Sidoarjo,Jawa Timur,107.57,4.4,0.628,0.189
+2025,3516,Mojokerto,Jawa Timur,102.67,8.79,1.481,0.354
+2025,3517,Jombang,Jawa Timur,107.82,8.36,0.898,0.151
+2025,3518,Nganjuk,Jawa Timur,107.3,10.06,1.454,0.32
+2025,3519,Madiun,Jawa Timur,71.59,10.4,1.707,0.322
+2025,3520,Magetan,Jawa Timur,58.38,9.14,0.739,0.115
+2025,3521,Ngawi,Jawa Timur,114.9,13.62,1.646,0.263
+2025,3522,Bojonegoro,Jawa Timur,144.9,11.49,1.455,0.271
+2025,3523,Tuban,Jawa Timur,168.86,14.13,1.887,0.423
+2025,3524,Lamongan,Jawa Timur,145.45,12.03,1.159,0.191
+2025,3525,Gresik,Jawa Timur,138.55,9.95,1.923,0.571
+2025,3526,Bangkalan,Jawa Timur,187.9,18.25,3.135,0.749
+2025,3527,Sampang,Jawa Timur,213.98,20.61,2.059,0.325
+2025,3528,Pamekasan,Jawa Timur,118.52,12.77,1.449,0.244
+2025,3529,Sumenep,Jawa Timur,188.48,17.02,2.183,0.472
+2025,3571,Kota Kediri,Jawa Timur,17.93,6.04,0.623,0.207
+2025,3572,Kota Blitar,Jawa Timur,9.69,6.6,0.842,0.154
+2025,3573,Kota Malang,Jawa Timur,34.41,3.85,0.392,0.046
+2025,3574,Kota Probolinggo,Jawa Timur,14.11,5.69,0.357,0.052
+2025,3575,Kota Pasuruan,Jawa Timur,12.83,6.18,1.028,0.22
+2025,3576,Kota Mojokerto,Jawa Timur,6.77,5.05,0.759,0.147
+2025,3577,Kota Madiun,Jawa Timur,6.96,3.89,0.379,0.054
+2025,3578,Kota Surabaya,Jawa Timur,105.09,3.56,0.413,0.112
+2025,3579,Kota Batu,Jawa Timur,6.22,2.86,0.365,0.064
+2025,3601,Pandeglang,Banten,105.35,8.51,0.985,0.182
+2025,3602,Lebak,Banten,106.52,8.03,1.011,0.271
+2025,3603,Tangerang,Banten,265.9,6.42,0.887,0.209
+2025,3604,Serang,Banten,68.51,4.48,0.617,0.123
+2025,3671,Kota Tangerang,Banten,124.76,5.19,0.693,0.144
+2025,3672,Kota Cilegon,Banten,16.05,3.44,0.441,0.118
+2025,3673,Kota Serang,Banten,41.07,5.51,0.736,0.177
+2025,3674,Kota Tangerang Selatan,Banten,44.61,2.39,0.26,0.038
+2025,5101,Jembrana,Bali,12.45,4.33,0.459,0.077
+2025,5102,Tabanan,Bali,19.45,4.23,0.66,0.125
+2025,5103,Badung,Bali,14.66,1.9,0.26,0.074
+2025,5104,Gianyar,Bali,20.0,3.71,0.568,0.161
+2025,5105,Klungkung,Bali,9.48,5.18,0.841,0.17
+2025,5106,Bangli,Bali,11.28,4.83,0.616,0.114
+2025,5107,Karangasem,Bali,27.32,6.4,0.523,0.078
+2025,5108,Buleleng,Bali,35.39,5.2,0.466,0.071
+2025,5171,Kota Denpasar,Bali,23.2,2.16,0.162,0.029
+2025,5201,Lombok Barat,Nusa Tenggara Barat,92.12,11.9,1.142,0.187
+2025,5202,Lombok Tengah,Nusa Tenggara Barat,109.25,10.68,1.505,0.311
+2025,5203,Lombok Timur,Nusa Tenggara Barat,173.79,13.53,2.456,0.614
+2025,5204,Sumbawa,Nusa Tenggara Barat,58.23,11.79,1.61,0.351
+2025,5205,Dompu,Nusa Tenggara Barat,31.27,11.15,1.308,0.22
+2025,5206,Bima,Nusa Tenggara Barat,66.81,12.59,1.371,0.251
+2025,5207,Sumbawa Barat,Nusa Tenggara Barat,19.46,10.98,2.17,0.647
+2025,5208,Lombok Utara,Nusa Tenggara Barat,49.28,20.74,2.703,0.599
+2025,5271,Kota Mataram,Nusa Tenggara Barat,39.82,7.15,1.335,0.349
+2025,5272,Kota Bima,Nusa Tenggara Barat,14.54,7.33,0.532,0.065
+2025,5301,Kupang,Nusa Tenggara Timur,87.5,20.32,3.114,0.73
+2025,5302,Timor Tengah Selatan,Nusa Tenggara Timur,116.74,24.5,5.03,1.41
+2025,5303,Timor Tengah Utara,Nusa Tenggara Timur,53.44,20.17,4.662,1.28
+2025,5304,Belu,Nusa Tenggara Timur,30.4,12.79,2.053,0.427
+2025,5305,Alor,Nusa Tenggara Timur,38.68,18.29,1.78,0.336
+2025,5306,Flores Timur,Nusa Tenggara Timur,28.92,10.88,1.424,0.319
+2025,5307,Sikka,Nusa Tenggara Timur,36.74,11.25,1.359,0.344
+2025,5308,Ende,Nusa Tenggara Timur,58.92,21.31,3.549,0.865
+2025,5309,Ngada,Nusa Tenggara Timur,19.53,11.22,1.666,0.354
+2025,5310,Manggarai,Nusa Tenggara Timur,65.81,18.1,3.574,1.003
+2025,5311,Sumba Timur,Nusa Tenggara Timur,70.35,25.64,6.125,2.134
+2025,5312,Sumba Barat,Nusa Tenggara Timur,37.08,26.47,4.412,1.069
+2025,5313,Lembata,Nusa Tenggara Timur,36.78,23.27,5.084,1.39
+2025,5314,Rote Ndao,Nusa Tenggara Timur,51.64,24.37,3.395,0.727
+2025,5315,Manggarai Barat,Nusa Tenggara Timur,49.55,16.09,2.955,0.812
+2025,5316,Nagekeo,Nusa Tenggara Timur,18.63,12.18,2.212,0.505
+2025,5317,Sumba Tengah,Nusa Tenggara Timur,22.81,29.23,5.715,1.891
+2025,5318,Sumba Barat Daya,Nusa Tenggara Timur,97.68,25.66,6.662,2.139
+2025,5319,Manggarai Timur,Nusa Tenggara Timur,70.99,23.51,4.675,1.162
+2025,5320,Sabu Raijua,Nusa Tenggara Timur,30.65,27.18,5.586,1.817
+2025,5321,Malaka,Nusa Tenggara Timur,28.05,13.52,1.559,0.247
+2025,5371,Kota Kupang,Nusa Tenggara Timur,37.91,7.57,1.007,0.214
+2025,6101,Sambas,Kalimantan Barat,35.07,6.37,0.724,0.123
+2025,6102,Mempawah,Kalimantan Barat,12.38,4.49,0.474,0.093
+2025,6103,Sanggau,Kalimantan Barat,22.93,4.61,0.348,0.045
+2025,6104,Ketapang,Kalimantan Barat,46.82,8.44,1.59,0.439
+2025,6105,Sintang,Kalimantan Barat,35.02,7.93,1.342,0.433
+2025,6106,Kapuas Hulu,Kalimantan Barat,19.47,6.86,1.033,0.225
+2025,6107,Bengkayang,Kalimantan Barat,16.09,5.83,0.586,0.101
+2025,6108,Landak,Kalimantan Barat,35.34,8.9,0.845,0.148
+2025,6109,Sekadau,Kalimantan Barat,11.64,5.61,0.56,0.097
+2025,6110,Melawi,Kalimantan Barat,23.36,10.51,1.01,0.178
+2025,6111,Kayong Utara,Kalimantan Barat,10.58,8.75,1.032,0.183
+2025,6112,Kubu Raya,Kalimantan Barat,24.4,3.99,0.255,0.024
+2025,6171,Kota Pontianak,Kalimantan Barat,27.5,4.0,0.373,0.053
+2025,6172,Kota Singkawang,Kalimantan Barat,10.36,4.28,0.474,0.063
+2025,6201,Kotawaringin Barat,Kalimantan Tengah,14.18,4.27,0.556,0.118
+2025,6202,Kotawaringin Timur,Kalimantan Tengah,27.7,5.83,1.004,0.266
+2025,6203,Kapuas,Kalimantan Tengah,20.43,5.48,0.572,0.099
+2025,6204,Barito Selatan,Kalimantan Tengah,7.09,4.94,0.369,0.077
+2025,6205,Barito Utara,Kalimantan Tengah,7.44,5.52,0.685,0.142
+2025,6206,Katingan,Kalimantan Tengah,9.75,5.3,0.609,0.108
+2025,6207,Seruyan,Kalimantan Tengah,15.64,6.72,0.572,0.067
+2025,6208,Sukamara,Kalimantan Tengah,2.87,4.02,0.723,0.167
+2025,6209,Lamandau,Kalimantan Tengah,2.89,3.33,0.424,0.082
+2025,6210,Gunung Mas,Kalimantan Tengah,6.67,5.48,0.871,0.205
+2025,6211,Pulang Pisau,Kalimantan Tengah,6.23,4.79,0.852,0.258
+2025,6212,Murung Raya,Kalimantan Tengah,7.64,6.19,1.156,0.338
+2025,6213,Barito Timur,Kalimantan Tengah,8.12,6.1,1.162,0.323
+2025,6271,Kota Palangkaraya,Kalimantan Tengah,11.16,3.62,0.377,0.06
+2025,6301,Tanah Laut,Kalimantan Selatan,10.83,3.0,0.269,0.049
+2025,6302,Kotabaru,Kalimantan Selatan,15.89,4.39,0.503,0.113
+2025,6303,Banjar,Kalimantan Selatan,16.92,2.74,0.232,0.028
+2025,6304,Barito Kuala,Kalimantan Selatan,13.97,4.31,0.569,0.124
+2025,6305,Tapin,Kalimantan Selatan,5.77,2.91,0.347,0.099
+2025,6306,Hulu Sungai Selatan,Kalimantan Selatan,7.55,3.12,0.483,0.123
+2025,6307,Hulu Sungai Tengah,Kalimantan Selatan,13.94,5.03,0.342,0.037
+2025,6308,Hulu Sungai Utara,Kalimantan Selatan,11.71,4.81,0.436,0.069
+2025,6309,Tabalong,Kalimantan Selatan,12.5,4.67,0.221,0.018
+2025,6310,Tanah Bumbu,Kalimantan Selatan,13.81,3.13,0.433,0.119
+2025,6311,Balangan,Kalimantan Selatan,6.42,4.64,0.511,0.094
+2025,6371,Kota Banjarmasin,Kalimantan Selatan,33.16,4.52,0.507,0.099
+2025,6372,Kota Banjarbaru,Kalimantan Selatan,10.27,3.44,0.384,0.075
+2025,6401,Paser,Kalimantan Timur,24.05,8.13,1.47,0.406
+2025,6402,Kutai Kartanegara,Kalimantan Timur,54.99,6.72,0.785,0.152
+2025,6403,Berau,Kalimantan Timur,10.96,4.44,0.552,0.107
+2025,6407,Kutai Barat,Kalimantan Timur,13.24,8.72,0.843,0.135
+2025,6408,Kutai Timur,Kalimantan Timur,34.91,8.07,1.199,0.258
+2025,6409,Penajam Paser Utara,Kalimantan Timur,9.34,5.78,0.94,0.231
+2025,6411,Mahakam Ulu,Kalimantan Timur,2.73,10.09,1.197,0.232
+2025,6471,Kota Balikpapan,Kalimantan Timur,12.88,1.97,0.343,0.095
+2025,6472,Kota Samarinda,Kalimantan Timur,30.45,3.45,0.666,0.188
+2025,6474,Kota Bontang,Kalimantan Timur,6.18,3.21,0.345,0.061
+2025,6501,Bulungan,Kalimantan Utara,9.92,7.26,0.84,0.173
+2025,6502,Malinau,Kalimantan Utara,5.24,5.56,0.248,0.014
+2025,6503,Nunukan,Kalimantan Utara,11.81,5.27,1.261,0.553
+2025,6504,Tana Tidung,Kalimantan Utara,1.59,4.56,0.533,0.147
+2025,6571,Kota Tarakan,Kalimantan Utara,14.01,5.03,0.038,0.0
+2025,7101,Bolaang Mongondow,Sulawesi Utara,18.4,6.98,0.735,0.118
+2025,7102,Minahasa,Sulawesi Utara,20.63,5.88,1.037,0.244
+2025,7103,Kepulauan Sangihe,Sulawesi Utara,14.49,10.91,1.054,0.142
+2025,7104,Kepulauan Talaud,Sulawesi Utara,7.95,8.34,1.365,0.312
+2025,7105,Minahasa Selatan,Sulawesi Utara,17.67,8.26,1.414,0.33
+2025,7106,Minahasa Utara,Sulawesi Utara,12.5,6.05,0.884,0.247
+2025,7107,Minahasa Tenggara,Sulawesi Utara,11.09,10.31,1.817,0.492
+2025,7108,Bolaang Mongondow Utara,Sulawesi Utara,6.03,7.15,0.863,0.187
+2025,7109,Kepulauan Siau Tagulandang Biaro,Sulawesi Utara,5.64,8.32,0.7,0.113
+2025,7110,Bolaang Mongondow Timur,Sulawesi Utara,4.04,5.32,0.595,0.105
+2025,7111,Bolaang Mongondow Selatan,Sulawesi Utara,7.39,10.52,1.507,0.425
+2025,7171,Kota Manado,Sulawesi Utara,21.73,4.99,0.877,0.242
+2025,7172,Kota Bitung,Sulawesi Utara,13.57,5.81,0.676,0.123
+2025,7173,Kota Tomohon,Sulawesi Utara,5.55,4.86,0.687,0.117
+2025,7174,Kota Kotamobagu,Sulawesi Utara,7.18,5.14,0.471,0.132
+2025,7201,Banggai,Sulawesi Tengah,25.17,6.23,0.743,0.136
+2025,7202,Poso,Sulawesi Tengah,36.49,12.9,2.22,0.645
+2025,7203,Donggala,Sulawesi Tengah,45.92,14.66,2.71,0.728
+2025,7204,Toli-Toli,Sulawesi Tengah,29.98,12.2,2.198,0.602
+2025,7205,Buol,Sulawesi Tengah,22.35,12.48,1.615,0.344
+2025,7206,Morowali,Sulawesi Tengah,13.65,10.38,1.065,0.212
+2025,7207,Banggai Kepulauan,Sulawesi Tengah,13.92,11.49,2.142,0.554
+2025,7208,Parigi Moutong,Sulawesi Tengah,71.88,13.51,2.927,0.935
+2025,7209,Tojo Una Una,Sulawesi Tengah,23.59,14.67,1.693,0.284
+2025,7210,Sigi,Sulawesi Tengah,26.03,10.47,1.77,0.444
+2025,7211,Banggai Laut,Sulawesi Tengah,10.44,12.71,1.435,0.221
+2025,7212,Morowali Utara,Sulawesi Tengah,14.78,10.38,1.539,0.366
+2025,7271,Kota Palu,Sulawesi Tengah,21.99,5.26,0.665,0.144
+2025,7301,Kepulauan Selayar,Sulawesi Selatan,14.77,10.61,1.495,0.318
+2025,7302,Bulukumba,Sulawesi Selatan,25.88,6.06,0.702,0.124
+2025,7303,Bantaeng,Sulawesi Selatan,14.74,7.68,0.829,0.15
+2025,7304,Jeneponto,Sulawesi Selatan,42.56,11.42,1.176,0.182
+2025,7305,Takalar,Sulawesi Selatan,22.17,7.27,0.821,0.168
+2025,7306,Gowa,Sulawesi Selatan,54.04,6.64,1.094,0.295
+2025,7307,Sinjai,Sulawesi Selatan,18.44,7.41,0.948,0.212
+2025,7308,Bone,Sulawesi Selatan,69.73,9.13,1.084,0.212
+2025,7309,Maros,Sulawesi Selatan,32.67,8.9,1.542,0.376
+2025,7310,Pangkajene dan Kepulauan,Sulawesi Selatan,40.37,11.6,1.077,0.18
+2025,7311,Barru,Sulawesi Selatan,14.13,8.0,0.939,0.17
+2025,7312,Soppeng,Sulawesi Selatan,15.34,6.65,0.94,0.169
+2025,7313,Wajo,Sulawesi Selatan,24.15,5.86,0.819,0.149
+2025,7314,Sidenreng Rappang,Sulawesi Selatan,15.2,4.91,0.742,0.147
+2025,7315,Pinrang,Sulawesi Selatan,32.52,8.38,1.242,0.247
+2025,7316,Enrekang,Sulawesi Selatan,23.09,10.73,1.401,0.292
+2025,7317,Luwu,Sulawesi Selatan,41.76,10.97,1.49,0.284
+2025,7318,Tana Toraja,Sulawesi Selatan,25.82,10.54,1.128,0.173
+2025,7322,Luwu Utara,Sulawesi Selatan,35.03,10.74,2.287,0.707
+2025,7324,Luwu Timur,Sulawesi Selatan,18.55,5.79,1.2,0.322
+2025,7326,Toraja Utara,Sulawesi Selatan,24.48,10.05,1.582,0.365
+2025,7371,Kota Makassar,Sulawesi Selatan,71.63,4.43,0.523,0.104
+2025,7372,Kota Parepare,Sulawesi Selatan,6.73,4.44,0.385,0.078
+2025,7373,Kota Palopo,Sulawesi Selatan,14.31,7.18,1.247,0.338
+2025,7401,Kolaka,Sulawesi Tenggara,29.45,10.19,1.648,0.399
+2025,7402,Konawe,Sulawesi Tenggara,33.04,12.78,2.752,0.817
+2025,7403,Muna,Sulawesi Tenggara,28.81,12.4,1.744,0.394
+2025,7404,Buton,Sulawesi Tenggara,13.89,13.46,1.686,0.326
+2025,7405,Konawe Selatan,Sulawesi Tenggara,37.4,11.18,1.667,0.351
+2025,7406,Bombana,Sulawesi Tenggara,20.15,10.14,1.816,0.429
+2025,7407,Wakatobi,Sulawesi Tenggara,13.98,13.4,2.463,0.689
+2025,7408,Kolaka Utara,Sulawesi Tenggara,21.47,12.94,2.326,0.645
+2025,7409,Konawe Utara,Sulawesi Tenggara,8.19,11.89,2.099,0.488
+2025,7410,Buton Utara,Sulawesi Tenggara,8.69,13.22,1.456,0.293
+2025,7411,Kolaka Timur,Sulawesi Tenggara,18.99,12.57,2.599,0.835
+2025,7412,Konawe Kepulauan,Sulawesi Tenggara,5.01,14.42,1.659,0.288
+2025,7413,Muna Barat,Sulawesi Tenggara,10.97,12.83,1.915,0.396
+2025,7414,Buton Tengah,Sulawesi Tenggara,12.61,13.4,1.855,0.329
+2025,7415,Buton Selatan,Sulawesi Tenggara,11.0,13.64,1.49,0.222
+2025,7471,Kota Kendari,Sulawesi Tenggara,18.38,4.18,0.554,0.113
+2025,7472,Kota Bau Bau,Sulawesi Tenggara,12.41,6.83,0.677,0.096
+2025,7501,Gorontalo,Gorontalo,56.13,14.89,1.655,0.296
+2025,7502,Boalemo,Gorontalo,29.4,16.37,3.481,0.929
+2025,7503,Bone Bolango,Gorontalo,21.11,13.16,1.915,0.445
+2025,7504,Pohuwato,Gorontalo,26.1,15.24,1.926,0.332
+2025,7505,Gorontalo Utara,Gorontalo,17.9,15.89,2.605,0.649
+2025,7571,Kota Gorontalo,Gorontalo,12.12,5.31,0.437,0.056
+2025,7601,Pasangkayu,Sulawesi Barat,9.65,4.96,0.615,0.101
+2025,7602,Mamuju,Sulawesi Barat,22.48,6.99,0.725,0.131
+2025,7603,Mamasa,Sulawesi Barat,22.87,13.66,1.79,0.35
+2025,7604,Polewali Mandar,Sulawesi Barat,63.29,14.02,2.015,0.461
+2025,7605,Majene,Sulawesi Barat,23.4,12.98,1.55,0.272
+2025,7606,Mamuju Tengah,Sulawesi Barat,10.62,7.22,1.401,0.366
+2025,8101,Maluku Tengah,Maluku,63.05,16.71,2.536,0.593
+2025,8102,Maluku Tenggara,Maluku,21.42,21.16,2.706,0.486
+2025,8103,Kepulauan Tanimbar,Maluku,26.46,23.38,4.067,1.01
+2025,8104,Buru,Maluku,23.95,15.11,2.42,0.501
+2025,8105,Seram Bagian Timur,Maluku,24.33,20.9,3.535,0.912
+2025,8106,Seram Bagian Barat,Maluku,38.01,21.85,4.23,1.315
+2025,8107,Kepulauan Aru,Maluku,22.25,23.1,3.357,0.744
+2025,8108,Maluku Barat Daya,Maluku,20.43,27.65,3.883,0.949
+2025,8109,Buru Selatan,Maluku,9.63,14.84,1.926,0.405
+2025,8171,Kota Ambon,Maluku,22.3,4.34,0.442,0.078
+2025,8172,Kota Tual,Maluku,15.94,19.39,3.72,1.057
+2025,8201,Halmahera Barat,Maluku Utara,9.69,7.9,1.044,0.225
+2025,8202,Halmahera Tengah,Maluku Utara,5.61,9.16,1.173,0.247
+2025,8203,Halmahera Utara,Maluku Utara,8.84,4.35,0.379,0.094
+2025,8204,Halmahera Selatan,Maluku Utara,11.78,4.81,0.246,0.023
+2025,8205,Kepulauan Sula,Maluku Utara,8.05,7.65,0.651,0.097
+2025,8206,Halmahera Timur,Maluku Utara,11.05,10.54,2.194,0.678
+2025,8207,Pulau Morotai,Maluku Utara,3.29,4.49,0.592,0.137
+2025,8208,Pulau Taliabu,Maluku Utara,3.72,6.63,0.669,0.122
+2025,8271,Kota Ternate,Maluku Utara,8.51,3.34,0.225,0.023
+2025,8272,Kota Tidore Kepulauan,Maluku Utara,6.73,6.54,0.762,0.142
+2025,9103,Jayapura,Papua,17.18,13.03,3.305,1.252
+2025,9105,Kepulauan Yapen,Papua,28.7,28.0,8.02,3.069
+2025,9106,Biak Numfor,Papua,39.74,25.73,5.643,1.638
+2025,9110,Sarmi,Papua,6.41,15.17,1.733,0.3
+2025,9111,Keerom,Papua,10.79,17.76,4.256,1.28
+2025,9115,Waropen,Papua,11.45,32.6,7.702,2.274
+2025,9119,Supiori,Papua,9.47,42.56,12.241,4.955
+2025,9120,Mamberamo Raya,Papua,9.32,35.09,5.589,1.269
+2025,9171,Kota Jayapura,Papua,38.33,12.03,2.523,0.788
+2025,9202,Manokwari,Papua Barat,31.72,17.38,4.689,1.558
+2025,9203,Fak Fak,Papua Barat,17.04,19.86,3.774,1.007
+2025,9206,Teluk Bintuni,Papua Barat,18.48,25.34,5.754,1.747
+2025,9207,Teluk Wondama,Papua Barat,10.16,27.57,6.128,1.775
+2025,9208,Kaimana,Papua Barat,9.9,13.83,2.762,0.795
+2025,9211,Manokwari Selatan,Papua Barat,7.75,26.52,4.116,0.933
+2025,9212,Pegunungan Arfak,Papua Barat,11.86,30.88,5.841,1.395
+2025,9301,Merauke,Papua Selatan,27.72,11.31,2.905,1.073
+2025,9302,Boven Digoel,Papua Selatan,16.26,21.96,3.199,0.72
+2025,9303,Mappi,Papua Selatan,30.5,28.46,4.689,1.144
+2025,9304,Asmat,Papua Selatan,31.06,28.47,3.852,0.777
+2025,9401,Nabire,Papua Tengah,34.18,22.65,6.725,2.854
+2025,9402,Puncak Jaya,Papua Tengah,48.85,35.46,8.369,2.955
+2025,9403,Paniai,Papua Tengah,63.26,36.31,4.569,1.113
+2025,9404,Mimika,Papua Tengah,31.31,13.7,3.651,1.447
+2025,9405,Puncak,Papua Tengah,43.55,36.94,4.98,0.903
+2025,9406,Dogiyai,Papua Tengah,29.96,29.34,4.341,0.85
+2025,9407,Intan Jaya,Papua Tengah,21.37,39.21,6.636,1.812
+2025,9408,Deiyai,Papua Tengah,29.84,37.29,3.543,0.62
+2025,9501,Jayawijaya,Papua Pegunungan,61.64,29.08,7.733,2.72
+2025,9502,Pegunungan Bintang,Papua Pegunungan,20.61,25.87,2.178,0.289
+2025,9503,Yahukimo,Papua Pegunungan,62.42,30.61,3.737,0.703
+2025,9504,Tolikara,Papua Pegunungan,45.62,28.75,2.695,0.385
+2025,9505,Mamberamo Tengah,Papua Pegunungan,18.81,32.2,7.042,2.094
+2025,9506,Yalimo,Papua Pegunungan,19.9,27.35,6.364,1.811
+2025,9507,Lanny Jaya,Papua Pegunungan,68.04,31.59,7.187,2.383
+2025,9508,Nduga,Papua Pegunungan,40.29,32.89,4.879,1.377
+2025,9601,Sorong,Papua Barat Daya,25.61,25.1,5.676,1.686
+2025,9602,Sorong Selatan,Papua Barat Daya,9.49,17.66,4.093,1.222
+2025,9603,Raja Ampat,Papua Barat Daya,8.6,16.57,2.271,0.44
+2025,9604,Tambrauw,Papua Barat Daya,4.96,28.94,5.007,1.149
+2025,9605,Maybrat,Papua Barat Daya,13.53,29.0,6.992,2.275
+2025,9671,Kota Sorong,Papua Barat Daya,41.39,13.55,2.559,0.744
