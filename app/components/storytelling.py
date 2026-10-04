@@ -69,13 +69,13 @@ CHART_VIEWS = [
     ("sunburst", "Sunburst"),
 ]
 GUIDES = {
-    "choropleth": "Warna menunjukkan persentase penduduk miskin, bukan jumlah orang.",
-    "heatmap-map": "Intensitas menunjukkan akumulasi jumlah penduduk miskin di titik representatif.",
-    "pca": "Titik yang berdekatan memiliki profil multivariat yang relatif serupa; PCA bukan klaster.",
-    "parallel": "Setiap garis mewakili satu kabupaten/kota; sumbu dinormalisasi secara terpisah.",
-    "correlation": "Warna menunjukkan korelasi Pearson antarindikator, bukan hubungan sebab-akibat.",
-    "treemap": "Luas menunjukkan jumlah penduduk miskin; warna menunjukkan persentase miskin.",
-    "sunburst": "Sudut menunjukkan jumlah penduduk miskin pada setiap tingkat wilayah.",
+    "choropleth": "Bayangkan peta ini sebagai potret: warna lebih pekat berarti bagian warga miskin lebih besar, bukan jumlah orangnya.",
+    "heatmap-map": "Pijar yang lebih kuat menandai lebih banyak warga miskin; wilayah berpenduduk besar dapat memiliki jumlah tinggi meski persentasenya tidak tertinggi.",
+    "pca": "Titik yang berdekatan menggambarkan kabupaten/kota dengan keadaan yang mirip. Ini cara merangkum banyak ukuran sekaligus, bukan pengelompokan resmi.",
+    "parallel": "Setiap garis menceritakan satu kabupaten/kota melalui beberapa ukuran kesejahteraan. Perhatikan pola garisnya, bukan membandingkan tinggi antar-sumbu secara langsung.",
+    "correlation": "Warna merangkum apakah dua ukuran cenderung bergerak bersama. Kecenderungan ini tidak membuktikan bahwa satu hal menyebabkan hal lain.",
+    "treemap": "Kotak yang lebih luas mewakili lebih banyak warga miskin; warnanya bercerita tentang persentase di wilayah tersebut.",
+    "sunburst": "Bagan lingkaran ini menelusuri jumlah warga miskin dari pulau ke provinsi hingga kabupaten/kota.",
 }
 
 SCROLL_JS = """
@@ -182,7 +182,7 @@ def _change_phrase(delta: float) -> str:
     if pd.isna(delta) or abs(delta) < 0.005:
         return "tidak berubah"
     direction = "turun" if delta < 0 else "naik"
-    return f"{direction} {format_number(abs(delta), 'indeks')} poin"
+    return f"{direction} {format_number(abs(delta), 'indeks')} poin persentase"
 
 
 def _comparison_sentence(df: pd.DataFrame, island: str, view: str) -> str:
@@ -193,15 +193,15 @@ def _comparison_sentence(df: pd.DataFrame, island: str, view: str) -> str:
     if view == "choropleth":
         old_top = prior.loc[prior["persen_miskin"].idxmax()]
         new_top = current.loc[current["persen_miskin"].idxmax()]
-        return f"Puncak persentase bergeser dari {_row_name(old_top)} ke {_row_name(new_top)}."
+        return f"Wilayah dengan bagian warga miskin terbesar berubah dari {_row_name(old_top)} menjadi {_row_name(new_top)}."
     if view == "heatmap-map":
         old_top = prior.loc[prior["jumlah_miskin"].idxmax()]
         new_top = current.loc[current["jumlah_miskin"].idxmax()]
-        return f"Puncak jumlah bergeser dari {_row_name(old_top)} ke {_row_name(new_top)}."
+        return f"Jumlah warga miskin terbanyak tercatat di {_row_name(old_top)} pada 2024 dan {_row_name(new_top)} pada 2025."
     if view in {"treemap", "sunburst"}:
         old_top = prior.groupby("nama_prov")["jumlah_miskin"].sum().idxmax()
         new_top = current.groupby("nama_prov")["jumlah_miskin"].sum().idxmax()
-        return f"Provinsi berporsi terbesar bergeser dari {old_top} ke {new_top}."
+        return f"Provinsi dengan jumlah terbesar berubah dari {old_top} menjadi {new_top}."
     paired = current[["kode_kab", "nama_kab", "nama_prov", "persen_miskin"]].merge(
         prior[["kode_kab", "persen_miskin"]],
         on="kode_kab",
@@ -214,12 +214,12 @@ def _comparison_sentence(df: pd.DataFrame, island: str, view: str) -> str:
     improved = float((delta < 0).mean())
     median_delta = float(current["persen_miskin"].median() - prior["persen_miskin"].median())
     improvement_text = (
-        f"{format_number(improved * 100, 'persen')} wilayah membaik."
+        f"Di {format_number(improved * 100, 'persen')} kabupaten/kota, persentasenya lebih rendah."
         if improved > 0
-        else "Tidak ada kabupaten/kota yang membaik."
+        else "Tidak ada kabupaten/kota dengan persentase yang lebih rendah."
     )
     return (
-        f"Dari 2024 ke 2025, median pulau {_change_phrase(median_delta)}; "
+        f"Dibanding 2024, nilai tengah persentase di pulau ini {_change_phrase(median_delta)}; "
         f"{improvement_text}"
     )
 
@@ -595,22 +595,23 @@ def _map_story(df: pd.DataFrame, island: str, year: int, view: str) -> str:
         total = valid_counts["jumlah_miskin"].sum()
         share = count_row["jumlah_miskin"] / total if total else 0
         contrast = (
-            "Persentasenya juga di atas median pulau."
+            "Di wilayah ini, persentase warga miskinnya juga tergolong lebih tinggi dibanding banyak wilayah lain di pulau tersebut."
             if count_row["persen_miskin"] > current["persen_miskin"].median()
-            else "Persentasenya justru di bawah median pulau."
+            else "Namun, persentase warga miskinnya lebih rendah dibanding banyak wilayah lain di pulau tersebut."
         )
         text = (
-            f"Jumlah penduduk miskin terbanyak ada di {_row_name(count_row)}: "
-            f"{format_number(count_row['jumlah_miskin'], 'orang')} orang, "
-            f"{format_number(share * 100, 'persen')} dari total pulau. {contrast}"
+            f"Jika jumlah orang yang dilihat, cerita terbesarnya ada di {_row_name(count_row)}: "
+            f"tercatat {format_number(count_row['jumlah_miskin'], 'orang')} warga miskin, "
+            f"sekitar {format_number(share * 100, 'persen')} dari jumlah di pulau ini. {contrast}"
         )
     else:
         gap = worst["persen_miskin"] - best["persen_miskin"]
         text = (
-            f"Pada {year}, persentase tertinggi berada di {_row_name(worst)} "
-            f"({format_number(worst['persen_miskin'], 'persen')}); terendah di {_row_name(best)} "
-            f"({format_number(best['persen_miskin'], 'persen')}). "
-            f"Kesenjangan keduanya {format_number(gap, 'indeks')} poin persentase."
+            f"Coba bayangkan setiap wilayah berisi 100 orang. Pada {year}, di {_row_name(worst)} "
+            f"bagian warga miskinnya paling besar: sekitar {format_number(worst['persen_miskin'], 'persen')} "
+            f"dari 100 orang. Di {_row_name(best)}, angkanya sekitar "
+            f"{format_number(best['persen_miskin'], 'persen')} dari 100. Jaraknya "
+            f"{format_number(gap, 'indeks')} poin persentase."
         )
     if year == 2025:
         text += " " + _comparison_sentence(df, island, view)
@@ -651,10 +652,10 @@ def _monitoring_criterion(df: pd.DataFrame, island: str, year: int) -> str:
     low_cut = national["IPM"].median()
     if ((rows["persen_miskin"] > high_cut) & (rows["IPM"] < low_cut)).all():
         return (
-            "Kriteria: persentase kemiskinan di atas median nasional dan "
-            "Indeks Pembangunan Manusia di bawah median nasional."
+            "Wilayah-wilayah ini memiliki persentase warga miskin lebih tinggi, sekaligus "
+            "capaian pembangunan manusia lebih rendah daripada nilai tengah kabupaten/kota Indonesia."
         )
-    return "Peringkat mengikuti persentase kemiskinan tertinggi; tidak ada wilayah yang memenuhi kedua kriteria."
+    return "Daftar ini menunjukkan wilayah dengan persentase warga miskin tertinggi; tidak semuanya memiliki kedua kondisi tersebut."
 
 
 @st.cache_data(show_spinner=False, max_entries=128)
@@ -1001,22 +1002,38 @@ def _conclusion(df: pd.DataFrame) -> None:
             f"ke {_row_name(worst)} pada 2025."
         )
     share = island_totals.iloc[0] / total_people if total_people else 0
+    share_context = "lebih dari separuh" if share >= 0.5 else "sekitar satu dari setiap dua"
     credits = CONFIG["credits"]
     spatial_text = (
-        f"Pada {current_year}, median persentase penduduk miskin tertinggi berada di {high_island}. "
-        f"Nilai tertinggi tercatat di {_row_name(worst)} "
-        f"({format_number(worst['persen_miskin'], 'persen')}), sedangkan terendah di "
-        f"{_row_name(best)} ({format_number(best['persen_miskin'], 'persen')})."
+        f"Mulai dari gambaran besar: kondisi antarwilayah tidak seragam. Dalam data {current_year}, "
+        f"{high_island} memiliki nilai tengah persentase kemiskinan kabupaten/kota tertinggi "
+        "(nilai tengah berarti titik pemisah: separuh wilayah berada di atasnya dan separuh di bawahnya). "
+        f"Di {_row_name(worst)}, sekitar {format_number(worst['persen_miskin'], 'persen')} dari setiap "
+        f"100 penduduk termasuk miskin; di {_row_name(best)}, sekitar "
+        f"{format_number(best['persen_miskin'], 'persen')} dari 100. "
+        "Dua ujung ini menunjukkan betapa beragamnya pengalaman hidup di berbagai daerah."
     )
-    correlation_phrase = format_number(correlation, "indeks")
+    if pd.notna(correlation):
+        association = (
+            "Secara umum, kabupaten/kota dengan capaian pembangunan manusia lebih tinggi cenderung "
+            "memiliki persentase kemiskinan lebih rendah."
+            if correlation < 0
+            else "Secara umum, kedua ukuran ini cenderung meningkat bersama."
+            if correlation > 0
+            else "Dalam data ini, kedua ukuran tidak memperlihatkan kecenderungan bergerak bersama yang jelas."
+        )
+    else:
+        association = "Keterkaitan kedua ukuran belum dapat dihitung dari data yang tersedia."
     multivariate_text = (
-        f"Pada {current_year}, keterkaitan persentase kemiskinan dengan Indeks Pembangunan Manusia "
-        f"adalah {correlation_phrase}. Hubungan ini bukan sebab-akibat; perbandingan indikator "
-        "melengkapi pembacaan tanpa membentuk indeks resmi."
+        f"{association} Ini adalah kecenderungan dalam data, bukan bukti bahwa satu hal langsung menyebabkan "
+        "hal lainnya."
     )
     concentration_text = (
-        f"{concentration} menampung {format_number(share * 100, 'persen')} dari seluruh penduduk "
-        f"miskin pada data {current_year}. Jumlah absolut dan persentase menjawab pertanyaan berbeda."
+        f"Di sisi lain, jumlah orang juga penting. {share_context.capitalize()} warga miskin dalam data "
+        f"kabupaten/kota {current_year} tercatat di {concentration}—sekitar "
+        f"{format_number(share * 100, 'persen')}. "
+        "Daerah dengan jumlah terbesar belum tentu memiliki persentase tertinggi: jumlah bercerita tentang "
+        "berapa banyak orang, sedangkan persentase bercerita tentang seberapa besar bagian penduduknya."
     )
     st.html(
         '<section class="story-close" lang="id">'
