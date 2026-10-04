@@ -116,7 +116,7 @@ def render_pca(
         legend={"orientation": "h", "x": 0, "y": 1.12, "xanchor": "left", "yanchor": "bottom"},
         xaxis={"tickformat": ",.2f"},
         yaxis={"tickformat": ",.2f"},
-        transition=dict(duration=650, easing="cubic-in-out"),
+        transition=dict(duration=400, easing="cubic-in-out"),
         uirevision=key,
     )
     st.plotly_chart(
@@ -278,7 +278,7 @@ def render_parallel(
         margin=dict(t=30, b=20, l=60, r=20),
         paper_bgcolor="#faf8f5",
         plot_bgcolor="#faf8f5",
-        transition=dict(duration=650, easing="cubic-in-out"),
+        transition=dict(duration=400, easing="cubic-in-out"),
         separators=",.",
         hoverlabel={"bgcolor": "rgba(255,255,255,0.96)", "font": {"size": 12, "color": "#202522"}},
         xaxis={
@@ -362,7 +362,7 @@ def render_heatmap(
         margin=dict(t=20, b=20),
         paper_bgcolor="#faf8f5",
         plot_bgcolor="#faf8f5",
-        transition=dict(duration=650, easing="cubic-in-out"),
+        transition=dict(duration=400, easing="cubic-in-out"),
         separators=",.",
         hoverlabel={"bgcolor": "rgba(255,255,255,0.96)", "font": {"size": 12, "color": "#202522"}},
         uirevision=key,

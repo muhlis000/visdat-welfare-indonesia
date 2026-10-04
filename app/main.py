@@ -2,7 +2,6 @@ import json
 import sys
 from pathlib import Path
 
-import geopandas as gpd
 import pandas as pd
 import streamlit as st
 
@@ -18,15 +17,22 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-from components.common import add_pulau, require_columns
+from components.common import require_columns
 from components.storytelling import render_story
 
 
-@st.cache_data(show_spinner="Memuat peta dan indikator...")
-def load_app_data() -> tuple[pd.DataFrame, dict, list[str], dict[str, int]]:
-    path = ROOT / "data" / "processed" / "df_geo.parquet"
-    if not path.exists():
-        raise FileNotFoundError(f"File tidak ditemukan: {path}")
+@st.cache_data(show_spinner="Memuat peta dan indikator...", max_entries=2)
+def load_app_data(
+    asset_version: str,
+) -> tuple[pd.DataFrame, dict[str, str], list[str], dict[str, int]]:
+    static_dir = APP_DIR / "static"
+    data_path = static_dir / "story-data.json"
+    manifest_path = static_dir / "story-manifest.json"
+    if not data_path.is_file() or not manifest_path.is_file():
+        raise FileNotFoundError(
+            "Story assets are missing. Run `python scripts/build_story_assets.py` "
+            "before starting the app."
+        )
     required = [
         "kode_kab",
         "tahun",
@@ -38,57 +44,58 @@ def load_app_data() -> tuple[pd.DataFrame, dict, list[str], dict[str, int]]:
         "P2",
         "IPM",
         "pdrb_perkapita",
-        "geometry",
+        "pulau",
+        "lon",
+        "lat",
     ]
-    gdf = gpd.read_parquet(path, columns=required)
-    missing = [column for column in required if column not in gdf.columns]
+    data = pd.read_json(data_path, orient="records")
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if manifest.get("asset_version") != asset_version:
+        raise ValueError("Story asset version changed while loading the application data.")
+    missing = [column for column in required if column not in data.columns]
     if missing:
-        raise ValueError(f"Kolom wajib tidak ditemukan di df_geo.parquet: {', '.join(missing)}")
-    if gdf["kode_kab"].isna().any():
-        raise ValueError("df_geo.parquet memiliki kode kabupaten/kota kosong.")
+        raise ValueError(f"Story data is missing required columns: {', '.join(missing)}")
+    if data["kode_kab"].isna().any():
+        raise ValueError("Story data has null kode_kab values.")
 
-    gdf["kode_kab"] = gdf["kode_kab"].astype(str).str.strip().str.zfill(4)
-    duplicate_rows = int(gdf.duplicated(["kode_kab", "tahun"]).sum())
+    data["kode_kab"] = data["kode_kab"].astype(str).str.strip().str.zfill(4)
+    duplicate_rows = int(data.duplicated(["kode_kab", "tahun"]).sum())
     if duplicate_rows:
         raise ValueError(
-            f"df_geo.parquet memiliki {duplicate_rows} pasangan kode kabupaten/kota-tahun duplikat."
+            f"Story data has {duplicate_rows} duplicate kode_kab/tahun rows."
         )
 
-    geometry_by_code = gdf.loc[gdf.geometry.notna() & ~gdf.geometry.is_empty].copy()
-    geometry_by_code["_geometry_wkb"] = geometry_by_code.geometry.to_wkb()
-    inconsistent_geometry = int(
-        (geometry_by_code.groupby("kode_kab")["_geometry_wkb"].nunique() > 1).sum()
-    )
-    geom = geometry_by_code.drop_duplicates("kode_kab")[["kode_kab", "geometry"]].copy()
-    geometry_issues = {
-        "empty_geometry": int(gdf.geometry.isna().sum() + gdf.geometry.is_empty.sum()),
-        "unmatched_codes": 0,
-        "inconsistent_geometry": inconsistent_geometry,
-    }
-    data_codes = set(gdf["kode_kab"].unique())
-    geometry_codes = set(geom["kode_kab"].unique())
-    geometry_issues["unmatched_codes"] = len(data_codes - geometry_codes)
-    if geom.empty:
-        raise ValueError("Tidak ada geometri kabupaten/kota yang dapat digunakan di df_geo.parquet.")
+    if len(data) != manifest.get("row_count"):
+        raise ValueError("Story data row count does not match story-manifest.json.")
+    asset_version = manifest.get("asset_version")
+    if not isinstance(asset_version, str) or len(asset_version) < 12:
+        raise ValueError("Story manifest has no valid generated asset fingerprint.")
+    if data[["lon", "lat"]].isna().any().any():
+        raise ValueError("Story data has kabupaten/kota without map coordinates.")
 
-    geom["geometry"] = geom.geometry.simplify(0.012, preserve_topology=True)
-    points = geom.copy()
-    points["geometry"] = points.geometry.representative_point()
-    points["lon"] = points.geometry.x
-    points["lat"] = points.geometry.y
-    geojson = json.loads(geom.to_json())
-    df = pd.DataFrame(gdf.drop(columns="geometry"))
-    df = df.merge(points[["kode_kab", "lon", "lat"]], on="kode_kab", how="left")
-    df = add_pulau(df)
-    df["tahun"] = df["tahun"].astype(int)
-    unmapped = sorted(df.loc[df["pulau"] == "Lainnya", "nama_prov"].dropna().unique().tolist())
-    return df, geojson, unmapped, geometry_issues
+    map_assets = {
+        name: f"app/static/{asset['path']}?v={asset_version[:12]}"
+        for name, asset in manifest.get("map_assets", {}).items()
+    }
+    if not {"overview", "detail"}.issubset(map_assets):
+        raise ValueError("Story manifest must define overview and detail map assets.")
+    geometry_issues = manifest.get("geometry_issues", {})
+    unmapped = manifest.get("unmapped_provinces", [])
+    data["tahun"] = data["tahun"].astype(int)
+    return data, map_assets, unmapped, geometry_issues
 
 
 try:
-    data, geojson, unmapped_provinces, geometry_issues = load_app_data()
+    manifest_path = APP_DIR / "static" / "story-manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    asset_version = manifest.get("asset_version")
+    if not isinstance(asset_version, str) or len(asset_version) < 12:
+        raise ValueError("Story manifest has no valid generated asset fingerprint.")
+    data, map_assets, unmapped_provinces, geometry_issues = load_app_data(
+        asset_version
+    )
 except Exception as exc:
-    st.error(f"Gagal memuat `data/processed/df_geo.parquet`: {exc}")
+    st.error(f"Gagal memuat aset aplikasi: {exc}")
     st.stop()
 
 if not require_columns(
@@ -121,4 +128,4 @@ for issue, count in geometry_issues.items():
     if count:
         st.warning(f"Masalah geometri ({issue}): {count}. Visualisasi hanya memakai geometri yang tersedia.")
 
-render_story(data, geojson, unmapped_provinces)
+render_story(data, map_assets, unmapped_provinces)

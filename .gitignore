@@ -221,3 +221,5 @@ __pycache__/
 data/_big_local/
 data/geo/
 *.geojson
+
+!app/static/*.geojson

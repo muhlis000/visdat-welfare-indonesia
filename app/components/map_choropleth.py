@@ -11,7 +11,6 @@ from components.common import (
     MAP_TOOLTIP_HTML,
     MAP_TOOLTIP_STYLE,
     MAPBOX_STYLE,
-    escape_tooltip,
     format_number,
     get_mapbox_token,
     map_view,
@@ -24,83 +23,9 @@ from components.common import (
 CHOROPLETH_METRICS = ["persen_miskin", "IPM", "P1"]
 
 
-@st.cache_data(show_spinner=False, max_entries=4)
-def _colorize_geojson_cached(
-    geometry_id: int,
-    df: pd.DataFrame,
-    metric: str,
-    extruded: bool,
-    _geojson: dict,
-) -> dict:
-    meta = INDICATORS[metric]
-    lookup = df.drop_duplicates("kode_kab").set_index("kode_kab")
-    colorscale = meta["colorscale"]
-    colors = values_to_rgba(
-        lookup[metric],
-        colorscale,
-        reverse=not meta["higher_is_worse"],
-        alpha=200,
-    )
-    color_map = {kode: colors[i] for i, kode in enumerate(lookup.index)}
-    series = pd.to_numeric(lookup[metric], errors="coerce")
-    vmax = series.max(skipna=True) or 1
-    features = []
-    year = int(df["tahun"].iloc[0]) if "tahun" in df.columns and len(df) else ""
-    for feat in _geojson["features"]:
-        props = dict(feat.get("properties") or {})
-        kode = str(props.get("kode_kab", "")).zfill(4)
-        new_props = dict(props)
-        if kode not in lookup.index:
-            new_props.update(
-                {
-                    "fill_color": [180, 180, 180, 40],
-                    "elevation": 0,
-                    "nama_kab": escape_tooltip(props.get("nama_kab", "Wilayah")),
-                    "nama_prov": escape_tooltip(props.get("nama_prov", "")),
-                    "tahun": year,
-                    "tooltip_label": "Data",
-                    "tooltip_value": "tidak tersedia",
-                }
-            )
-        else:
-            row = lookup.loc[kode]
-            value = row[metric]
-            elev = 0.0
-            if extruded and pd.notna(value) and vmax:
-                elev = float(value) / float(vmax) * 180000
-            new_props.update(
-                {
-                    "fill_color": color_map[kode],
-                    "elevation": elev,
-                    "nama_kab": escape_tooltip(row["nama_kab"]),
-                    "nama_prov": escape_tooltip(row["nama_prov"]),
-                    "tahun": year,
-                    "tooltip_label": escape_tooltip(meta["label"]),
-                    "tooltip_value": escape_tooltip(format_number(value, meta["unit"])),
-                }
-            )
-        features.append(
-            {
-                "type": "Feature",
-                "geometry": feat.get("geometry"),
-                "properties": new_props,
-            }
-        )
-    return {"type": "FeatureCollection", "features": features}
-
-
-def _colorize_geojson(
-    geojson: dict,
-    df: pd.DataFrame,
-    metric: str,
-    extruded: bool,
-) -> dict:
-    return _colorize_geojson_cached(id(geojson), df, metric, extruded, geojson)
-
-
 def render_choropleth(
     df: pd.DataFrame,
-    geojson: dict,
+    geojson_url: str,
     *,
     default_metric: str = "persen_miskin",
     show_metric_control: bool = True,
@@ -158,21 +83,30 @@ def render_choropleth(
 
     pitch = 48.0 if view_mode == "3D" else 0.0
     bearing = -20.0 if view_mode == "3D" else 0.0
-    colored = _colorize_geojson(geojson, df, metric, extrude and view_mode == "3D")
     view = view_state or map_view(df, pitch=pitch, bearing=bearing)
+    year = int(df["tahun"].iloc[0])
+    color_field = f"properties.color_{metric}_{year}"
+    elevation_field = f"properties.elevation_{metric}_{year}"
+    tooltip_value_field = f"{{value_{metric}_{year}}}"
+    tooltip_html = (
+        MAP_TOOLTIP_HTML.replace("{tooltip_label}", meta["label"])
+        .replace("{tahun}", str(year))
+        .replace("{tooltip_value}", tooltip_value_field)
+    )
 
     layer = pdk.Layer(
         "GeoJsonLayer",
-        data=colored,
+        data=geojson_url,
+        id=f"{key or 'choropleth'}-geojson",
         opacity=0.92,
         stroked=True,
         filled=True,
         extruded=bool(extrude and view_mode == "3D"),
         wireframe=False,
-        get_fill_color="properties.fill_color",
+        get_fill_color=color_field,
         get_line_color=[80, 70, 60, 140],
         line_width_min_pixels=0.4,
-        get_elevation="properties.elevation",
+        get_elevation=elevation_field,
         pickable=True,
         auto_highlight=True,
     )
@@ -194,7 +128,7 @@ def render_choropleth(
         map_provider="mapbox",
         map_style=MAPBOX_STYLE,
         api_keys={"mapbox": token},
-        tooltip={"html": MAP_TOOLTIP_HTML, "style": MAP_TOOLTIP_STYLE},
+        tooltip={"html": tooltip_html, "style": MAP_TOOLTIP_STYLE},
     )
     st.pydeck_chart(deck, height=height, key=key)
 

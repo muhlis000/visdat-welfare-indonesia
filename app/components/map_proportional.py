@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import copy
-
 import numpy as np
 import pandas as pd
 import pydeck as pdk
@@ -24,20 +22,7 @@ from components.common import (
 )
 
 
-@st.cache_data(show_spinner=False, max_entries=1)
-def _heatmap_base_features(geometry_id: int, _geojson: dict) -> dict:
-    features = [
-        {
-            "type": "Feature",
-            "geometry": feature.get("geometry"),
-            "properties": {"fill_color": [183, 190, 185, 90]},
-        }
-        for feature in _geojson.get("features", [])
-    ]
-    return {"type": "FeatureCollection", "features": features}
-
-
-def render_proportional(df: pd.DataFrame, geojson: dict) -> None:
+def render_proportional(df: pd.DataFrame, geojson_url: str) -> None:
     token = get_mapbox_token()
     if token is None:
         return
@@ -82,26 +67,19 @@ def render_proportional(df: pd.DataFrame, geojson: dict) -> None:
     pitch = 46.0 if view_mode == "3D" else 0.0
     bearing = -18.0 if view_mode == "3D" else 0.0
     view = map_view(work, pitch=pitch, bearing=bearing)
+    year = int(work["tahun"].iloc[0])
 
     layers = []
     if overlay:
-        lookup = work.drop_duplicates("kode_kab").set_index("kode_kab")
-        colors = values_to_rgba(lookup["persen_miskin"], "Cividis", reverse=False, alpha=95)
-        color_map = {kode: colors[i] for i, kode in enumerate(lookup.index)}
-        features = []
-        for feat in copy.deepcopy(geojson)["features"]:
-            props = dict(feat.get("properties") or {})
-            kode = str(props.get("kode_kab", "")).zfill(4)
-            props["fill_color"] = color_map.get(kode, [200, 200, 200, 30])
-            features.append({"type": "Feature", "geometry": feat.get("geometry"), "properties": props})
         layers.append(
             pdk.Layer(
                 "GeoJsonLayer",
-                data={"type": "FeatureCollection", "features": features},
+                data=geojson_url,
+                id="proportional-choropleth",
                 stroked=True,
                 filled=True,
                 extruded=False,
-                get_fill_color="properties.fill_color",
+                get_fill_color=f"properties.color_persen_miskin_{year}",
                 get_line_color=[90, 80, 70, 80],
                 line_width_min_pixels=0.3,
                 pickable=False,
@@ -113,7 +91,6 @@ def render_proportional(df: pd.DataFrame, geojson: dict) -> None:
         work["radius"] = 2500 + np.sqrt(work["jumlah_miskin"] / max_count) * 52000
     else:
         work["radius"] = 2500
-    year = int(work["tahun"].iloc[0])
     work["tooltip_label"] = "Jumlah penduduk miskin"
     work["tooltip_value"] = work["jumlah_miskin"].map(
         lambda value: f"{format_number(value, 'orang')} orang"
@@ -126,6 +103,7 @@ def render_proportional(df: pd.DataFrame, geojson: dict) -> None:
     layers.append(
         pdk.Layer(
             "ScatterplotLayer",
+            id="proportional-points",
             data=work[
                 [
                     "lon",
@@ -176,7 +154,7 @@ def render_proportional(df: pd.DataFrame, geojson: dict) -> None:
 def render_heatmap_map(
     df: pd.DataFrame,
     *,
-    geojson: dict | None = None,
+    geojson_url: str | None = None,
     metric: str = "jumlah_miskin",
     view_state: dict | None = None,
     height: int = 560,
@@ -218,12 +196,12 @@ def render_heatmap_map(
         ["lon", "lat", "heat_weight", "nama_kab", "nama_prov", "tooltip_label", "tooltip_value", "tahun"]
     ].to_dict("records")
     layers = []
-    if geojson is not None:
-        base_features = _heatmap_base_features(id(geojson), geojson)
+    if geojson_url is not None:
         layers.append(
             pdk.Layer(
                 "GeoJsonLayer",
-                data=base_features,
+                data=geojson_url,
+                id=f"{key or 'heatmap'}-background",
                 stroked=True,
                 filled=True,
                 get_fill_color="properties.fill_color",
@@ -238,6 +216,7 @@ def render_heatmap_map(
     layers.extend([
         pdk.Layer(
             "HeatmapLayer",
+            id=f"{key or 'heatmap'}-density",
             data=points,
             get_position=["lon", "lat"],
             get_weight="heat_weight",
@@ -256,6 +235,7 @@ def render_heatmap_map(
         ),
         pdk.Layer(
             "ScatterplotLayer",
+            id=f"{key or 'heatmap'}-pick-targets",
             data=points,
             get_position=["lon", "lat"],
             get_radius=15000,

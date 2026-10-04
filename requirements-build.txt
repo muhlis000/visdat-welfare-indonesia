@@ -1,0 +1,5 @@
+-r requirements.txt
+geopandas==1.2.0
+pyarrow==25.0.1
+openpyxl
+requests

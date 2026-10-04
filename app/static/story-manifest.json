@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source_sha256": "227711995bdc506bfac23ae2cb664fc61a6c8ffb338e80d8f04da7138928c691",
+  "asset_version": "71cc45c8343c2c5f0190a4c142f8ebf1d2ad789df6162fc057da8ca3710ff303",
+  "row_count": 1028,
+  "unique_codes": 514,
+  "years": [
+    2024,
+    2025
+  ],
+  "island_codes": {
+    "Bali & Nusa Tenggara": 41,
+    "Jawa": 119,
+    "Kalimantan": 56,
+    "Maluku": 21,
+    "Papua": 42,
+    "Sulawesi": 81,
+    "Sumatera": 154
+  },
+  "unmapped_provinces": [],
+  "geometry_issues": {
+    "empty_geometry": 0,
+    "unmatched_codes": 0,
+    "inconsistent_geometry": 0
+  },
+  "story_data_bytes": 338326,
+  "map_assets": {
+    "overview": {
+      "path": "kabkota-overview.json",
+      "bytes": 985073,
+      "coordinate_count": 38045,
+      "tolerance_degrees": 0.1
+    },
+    "detail": {
+      "path": "kabkota-detail.json",
+      "bytes": 1811049,
+      "coordinate_count": 66336,
+      "tolerance_degrees": 0.01
+    }
+  },
+  "coordinate_precision_degrees": 0.001
+}

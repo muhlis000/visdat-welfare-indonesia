@@ -3,12 +3,11 @@
 from __future__ import annotations
 
 import html
+from pathlib import Path
 from typing import Any
 
 import pandas as pd
 import streamlit as st
-from shapely.geometry import shape
-from shapely.ops import unary_union
 
 from components.common import (
     BPS_SOURCE,
@@ -95,7 +94,7 @@ export default function (component) {
       if (target) {
         target.animate(
           [{ opacity: 0.82 }, { opacity: 1 }],
-          { duration: 420, easing: "ease-out" }
+          { duration: 250, easing: "ease-out" }
         );
       }
     });
@@ -135,6 +134,19 @@ export default function (component) {
 
   let scrollTimer = 0;
   function schedulePosition() {
+    const position = storyPosition();
+    if (position !== lastPosition) {
+      const target = doc.querySelector(
+        ".st-key-map-stage [data-testid='stDeckGlJsonChart'], " +
+        ".st-key-chart-stage [data-testid='stPlotlyChart']"
+      );
+      if (target) {
+        target.animate(
+          [{ opacity: 1 }, { opacity: 0.84 }],
+          { duration: 180, easing: "ease-out" }
+        );
+      }
+    }
     win.clearTimeout(scrollTimer);
     scrollTimer = win.setTimeout(publishPosition, 120);
   }
@@ -209,39 +221,6 @@ def _comparison_sentence(df: pd.DataFrame, island: str, view: str) -> str:
     return (
         f"Dari 2024 ke 2025, median pulau {_change_phrase(median_delta)}; "
         f"{improvement_text}"
-    )
-
-
-def _svg_silhouette(geojson: dict) -> str:
-    geometries = [
-        shape(feature["geometry"])
-        for feature in geojson.get("features", [])
-        if feature.get("geometry")
-    ]
-    if not geometries:
-        return ""
-    dissolved = unary_union(geometries).simplify(0.08, preserve_topology=True)
-    min_x, min_y, max_x, max_y = 94, -12, 142, 8
-    width, height = 1000, 420
-
-    def project(x: float, y: float) -> tuple[float, float]:
-        return ((x - min_x) / (max_x - min_x) * width, (max_y - y) / (max_y - min_y) * height)
-
-    polygons = [dissolved] if dissolved.geom_type == "Polygon" else list(dissolved.geoms)
-    paths: list[str] = []
-    for polygon in polygons:
-        coords = list(polygon.exterior.coords)
-        if len(coords) < 4:
-            continue
-        points = [project(coord[0], coord[1]) for coord in coords]
-        paths.append(
-            "M"
-            + " L".join(f"{x:.1f},{y:.1f}" for x, y in points)
-            + " Z"
-        )
-    return (
-        f'<svg class="hero-map" viewBox="0 0 {width} {height}" aria-hidden="true">'
-        f'<path d="{" ".join(paths)}"/></svg>'
     )
 
 
@@ -343,7 +322,7 @@ def _css() -> None:
         .story-card-title { margin:0 0 .6rem; font:700 clamp(1.25rem,2vw,1.8rem) 'Lexend',sans-serif; }
         .story-copy { margin:0; text-align:justify; hyphens:auto; line-height:1.62; font-size:clamp(1rem,1.2vw,1.12rem); }
         .story-words span { display:inline-block; opacity:0; filter:blur(8px); transform:translateY(8px);
-          animation:clarify .48s ease-out var(--word-delay) forwards; }
+          animation:clarify .32s ease-out var(--word-delay) forwards; }
         @keyframes clarify { to { opacity:1; filter:blur(0); transform:translateY(0); } }
         .chart-layout { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(300px,.9fr); gap:clamp(1rem,3vw,3.5rem);
           align-items:center; height:100%; padding-top:3.2rem; box-sizing:border-box; }
@@ -796,11 +775,19 @@ def _chart_story(df: pd.DataFrame, island: str, year: int, view: str) -> tuple[s
     return first, _monitoring_text(df, island, year)
 
 
-def _render_css_and_hero(geojson: dict) -> None:
+@st.cache_data(show_spinner=False, max_entries=1)
+def _load_hero_silhouette() -> str:
+    path = Path(__file__).resolve().parents[1] / "static" / "indonesia-silhouette.svg"
+    if not path.is_file():
+        raise FileNotFoundError(
+            "Hero silhouette is missing. Run `python scripts/build_story_assets.py`."
+        )
+    return path.read_text(encoding="utf-8")
+
+
+def _render_css_and_hero() -> None:
     _css()
-    if "story-indonesia-svg" not in st.session_state:
-        st.session_state["story-indonesia-svg"] = _svg_silhouette(geojson)
-    svg = st.session_state["story-indonesia-svg"]
+    svg = _load_hero_silhouette()
     st.html(
         '<section class="story-hero" data-story-hero lang="id">'
         f"{svg}"
@@ -811,7 +798,12 @@ def _render_css_and_hero(geojson: dict) -> None:
     )
 
 
-def _render_map_block(df: pd.DataFrame, geojson: dict, years: list[int], position: int) -> None:
+def _render_map_block(
+    df: pd.DataFrame,
+    map_assets: dict[str, str],
+    years: list[int],
+    position: int,
+) -> None:
     active_block, _ = _active_position()
     steps = _steps(MAP_VIEWS)
     position = min(position, len(steps) - 1)
@@ -824,7 +816,8 @@ def _render_map_block(df: pd.DataFrame, geojson: dict, years: list[int], positio
     view_state.update({"pitch": 0, "bearing": 0})
     if island:
         view_state["longitude"] -= 0.16 * (360 / 2 ** view_state["zoom"])
-    view_state["transitionDuration"] = 1400
+    view_state["transitionDuration"] = 900
+    geojson_url = map_assets["detail" if island else "overview"]
 
     with st.container(key="map-block"):
         with st.container(key="map-stage"):
@@ -853,12 +846,12 @@ def _render_map_block(df: pd.DataFrame, geojson: dict, years: list[int], positio
                 if view == "choropleth":
                     render_choropleth(
                         year_df,
-                        geojson,
+                        geojson_url,
                         default_metric="persen_miskin",
                         show_metric_control=False,
                         view_state=view_state,
                         height=760,
-                        key=f"story-map-{view}",
+                        key=f"story-map-{view}-{year}",
                         show_controls=False,
                         show_source=False,
                         show_legend=False,
@@ -875,11 +868,11 @@ def _render_map_block(df: pd.DataFrame, geojson: dict, years: list[int], positio
                 else:
                     render_heatmap_map(
                         year_df,
-                        geojson=geojson,
+                        geojson_url=geojson_url,
                         metric=CONFIG["heatmapMetric"],
                         view_state=view_state,
                         height=760,
-                        key=f"story-map-{view}",
+                        key=f"story-map-{view}-{year}",
                     )
                 if island:
                     story = _map_story(df, island, year, view)
@@ -1045,13 +1038,15 @@ def _conclusion(df: pd.DataFrame) -> None:
 
 
 @st.fragment
-def _story_fragment(df: pd.DataFrame, geojson: dict, years: list[int]) -> None:
-    _render_css_and_hero(geojson)
+def _story_fragment(
+    df: pd.DataFrame, map_assets: dict[str, str], years: list[int]
+) -> None:
+    _render_css_and_hero()
     block, index = _active_position()
     if block in {"hero", "map"}:
-        _render_map_block(df, geojson, years, index if block == "map" else 0)
+        _render_map_block(df, map_assets, years, index if block == "map" else 0)
     else:
-        _render_map_block(df, geojson, years, len(_steps(MAP_VIEWS)) - 1)
+        _render_map_block(df, map_assets, years, len(_steps(MAP_VIEWS)) - 1)
     if block in {"chart", "closing"}:
         _render_chart_block(
             df,
@@ -1063,8 +1058,10 @@ def _story_fragment(df: pd.DataFrame, geojson: dict, years: list[int]) -> None:
     _conclusion(df)
 
 
-def render_story(df: pd.DataFrame, geojson: dict, unmapped: list[str]) -> None:
+def render_story(
+    df: pd.DataFrame, map_assets: dict[str, str], unmapped: list[str]
+) -> None:
     if unmapped:
         print("Provinsi tanpa kelompok pulau:", ", ".join(unmapped))
     years = sorted(int(year) for year in df["tahun"].dropna().unique())
-    _story_fragment(df, geojson, years)
+    _story_fragment(df, map_assets, years)

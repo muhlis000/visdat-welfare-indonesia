@@ -1,10 +1,6 @@
-streamlit
+streamlit==1.64.0
 pandas
 numpy
-plotly
-geopandas
+plotly==7.1.0
 scikit-learn
-openpyxl
-requests
-pydeck
-pyarrow
+pydeck==0.9.3

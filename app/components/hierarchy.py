@@ -123,7 +123,7 @@ def render_treemap(
         paper_bgcolor="#faf8f5",
         separators=",.",
         hoverlabel={"bgcolor": "rgba(255,255,255,0.96)", "font": {"size": 12, "color": "#202522"}},
-        transition=dict(duration=650, easing="cubic-in-out"),
+        transition=dict(duration=400, easing="cubic-in-out"),
         uirevision=key,
     )
     st.plotly_chart(fig, width="stretch", key=key, config={"scrollZoom": False, "displayModeBar": True})
@@ -183,7 +183,7 @@ def render_sunburst(
         paper_bgcolor="#faf8f5",
         separators=",.",
         hoverlabel={"bgcolor": "rgba(255,255,255,0.96)", "font": {"size": 12, "color": "#202522"}},
-        transition=dict(duration=650, easing="cubic-in-out"),
+        transition=dict(duration=400, easing="cubic-in-out"),
         uirevision=key,
     )
     st.plotly_chart(fig, width="stretch", key=key, config={"scrollZoom": False, "displayModeBar": True})

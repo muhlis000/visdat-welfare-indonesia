@@ -29,3 +29,6 @@ grayColor = "#57534e"
 [theme.sidebar]
 backgroundColor = "#f3efe8"
 secondaryBackgroundColor = "#e7e0d6"
+
+[server]
+enableStaticServing = true
