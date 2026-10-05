@@ -46,26 +46,19 @@ melihat persoalan dari tiga sudut pandang utama:
 
 ## Workflow Proyek
 
-Pipeline proyek terdiri dari empat fase utama.
+Pipeline proyek terdiri dari empat fase utama:
 
-┌───────────────────────────────────────┐
-│ FASE 1 — Data Collection & Cleaning   │
-└──────────────────┬────────────────────┘
-                   │
-                   ▼
-┌───────────────────────────────────────┐
-│ FASE 2 — Data Geospasial              │
-└──────────────────┬────────────────────┘
-                   │
-                   ▼
-┌───────────────────────────────────────┐
-│ FASE 3 — Join Data & Story Assets     │
-└──────────────────┬────────────────────┘
-                   │
-                   ▼
-┌───────────────────────────────────────┐
-│ FASE 4 — Streamlit & Visualization    │
-└───────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A["FASE 1<br/>Data Collection & Cleaning"]
+    B["FASE 2<br/>Data Geospasial"]
+    C["FASE 3<br/>Join Data & Story Assets"]
+    D["FASE 4<br/>Streamlit & Visualization"]
+
+    A --> B
+    B --> C
+    C --> D
+```
 ---
 
 ## Jenis Visualisasi
